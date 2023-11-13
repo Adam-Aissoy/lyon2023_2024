@@ -1,0 +1,23 @@
+# Fdb version 4
+["pdflatex"] 1696326814 "/home/adam/Documents/lyon2023_2024/BDW avancer/cm.tex" "cm.pdf" "cm" 1696326814 2
+  "/etc/texmf/web2c/texmf.cnf" 1684541257 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/home/adam/Documents/lyon2023_2024/BDW avancer/cm.tex" 1696326812 1111 d4ed7b20b5057ad222165e200fdaa52b ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/article.cls" 1667332637 20144 d5ecf0a5140c8d8d8b72cbe86e320eff ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo" 1667332637 8448 c33a4e1cb35cee9b33c2b21033b73e39 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1673989714 30429 213676d4c7327a21d91ddaed900e7b81 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1676468108 39561 34c98e380bf7c7201ee6a7909aff625a ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1676468108 39561 34c98e380bf7c7201ee6a7909aff625a ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1684541320 125915 807ff72f6023b33a59c427bfd156a3d1 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1690120839 6475496 84e7a8a0d6c47bc9d91e95a766cf860b ""
+  "cm.aux" 1696326814 422 a4396657ba08718c438b32cdba1b8a71 "pdflatex"
+  "cm.tex" 1696326812 1111 d4ed7b20b5057ad222165e200fdaa52b ""
+  (generated)
+  "cm.aux"
+  "cm.log"
+  "cm.pdf"
+  (rewritten before read)

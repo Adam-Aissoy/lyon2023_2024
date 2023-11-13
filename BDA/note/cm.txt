@@ -1,0 +1,33 @@
+12/09/2023 cm2
+le modèle relationnel -> 
+* page 40 un ensemble est un objet, un panier qui contient des trucs. 
+* il y a un tuple dans une relation. pas de double. 
+Exemple de tuple: 
+soit les relations suivant 
+t = <a,b,c,d> 
+
+i leave this txt because i have similary with OneNote.
+
+Cm Adam Aysoy Absent
+    -- DF: verifie l'implication  
+    --DJ : 
+
+03/10/2023 
+Cm 
+-> page 100 
+    ** les dependances d'inclusion ( DI )
+    les DI verifie l'inclusion (à verifie ou a demander au prof)
+    Q1: c'est quoi les seqences ? Ex de difference entre {
+        * R1[AB] inclus R1[AB]
+        different de 
+        * R1[BA] inclus R1[AB]
+    }
+-> page 101 
+    R1(_ABC_),R1(*(AB)DE)
+    R1[AB] inclus R1[AB]
+
+Ex: ABCD 
+
+
+-> page 102 
+    ** contrainte de 
