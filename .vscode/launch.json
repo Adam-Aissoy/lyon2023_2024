@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/Dossiers Adam/Lyon/2023 2024/lyon2023_2024",
-      "program": "d:/Dossiers Adam/Lyon/2023 2024/lyon2023_2024/build/Debug/outDebug",
+      "cwd": "d:/Dossiers Adam/Lyon/lyon2023_2024",
+      "program": "d:/Dossiers Adam/Lyon/lyon2023_2024/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
