@@ -31,7 +31,20 @@ int main(){
     t->afficher();
 
 
+    TableauDynamique  tableau ;
+    for(int i = 0; i < 10; i++){
+        int randomValue = rand() % 101 - 50;
+        tableau.ajouterElement(randomValue);
+    }
 
+    tableau.afficher();
+    
+    tableau.redimensionner(4);
+    
+    tableau.afficher();
+    
+    tableau.redimensionner(12);
+    tableau.afficher();
 
     
     return 0;

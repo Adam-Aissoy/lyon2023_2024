@@ -138,4 +138,51 @@ int TableauDynamique::rechercherElement (ElementTD e) const {
     }
     return res;
 }
+// TPn 2 
 
+
+void TableauDynamique::redimensionner(unsigned int taille) {
+    if (taille == capacite) {
+        return;
+    } else if (taille < taille_utilisee) {
+        taille_utilisee = taille;
+    } else if (taille > capacite) {
+        ElementTD* nouveauTableau = new ElementTD[taille];
+        for (unsigned int i = 0; i < taille_utilisee; i++) {
+            nouveauTableau[i] = ad[i];
+        }
+        for (unsigned int i = taille_utilisee; i < taille; i++) {
+            nouveauTableau[i] = 0; 
+        }
+        delete[] ad;
+        ad = nouveauTableau;
+        capacite = taille;
+    }
+}
+
+// for Kinan 
+/*
+void TableauDynamique::redimensionner(unsigned int taille) {
+    if (taille > 0) {
+        if (taille == capacite) {
+            std::cout << "Rien ne s'est passé !"<<std::endl;
+        }
+        if (taille < capacite) {
+            ElementTD * NewTab = new ElementTD[capacite];
+            for ( unsigned int j = 0; j < taille; j++){
+                NewTab[j] = ad[j];
+                taille_utilisee--;
+            }
+            if (taille<capacite){
+                for (unsigned int j = 0; j < taille; j++){
+                    NewTab [j] = ad [j];
+                    taille_utilisee++;
+                }
+            }
+            delete [] ad;
+            this->ad = NewTab;
+        }
+        else std::cout << "ERREUR"<<std::endl;
+    }
+}
+*/

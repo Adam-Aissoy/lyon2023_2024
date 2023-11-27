@@ -64,6 +64,15 @@ public:
     /* R�sultat : indice de l'emplacement qui contient un ElementTD �gal � e,
                   -1 si le tableau ne contient pas d'�l�ment �gal � e */
 
+    // TPn 
+    // procedure redimensionner(taille : entier naturel)
+    //precondition : unsigned  taille
+    //
+    // postcondition :  si dimension(capacite) taille..le tableau est redimensionné à la taille donnée en paramètre si taille identique. si taille est plus petite alors le tableau est reduit et le nouveau tableau ne contient que les tailles premiers elements. si taille est plus grande alors le tableau est agrandi et les nouveaux elements sont initialisés à 0. 
+    // parametre en mode donnée 
+    
+   void redimensionner(unsigned int taille);
+
 };
 
 #endif
