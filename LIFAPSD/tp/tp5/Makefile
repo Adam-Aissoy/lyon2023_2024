@@ -1,26 +1,26 @@
-## create make with this command{TableauDynamique.cpp, TableauDynamique.h,ElementTD.cpp, ElementTD.h and main.cpp}
 # Makefile
 
 CC = g++
-CFLAGS = -Wall
+CFLAGS = -Wall -fPIE
+LDFLAGS = -no-pie
 
-# List of source files
+# Liste des fichiers source
 SRCS = TableauDynamique.cpp ElementTD.cpp main.cpp
 
-# List of object files
+# Liste des fichiers objets
 OBJS = $(SRCS:.cpp=.o)
 
-# Executable name
+# Nom de l'exécutable
 EXEC = monprog.out
 
-# Main target
+# Cible principale
 $(EXEC): $(OBJS)
-	$(CC) $(CFLAGS) $(OBJS) -o $(EXEC)
+	$(CC) $(CFLAGS) $(OBJS) -o $(EXEC) $(LDFLAGS)
 
-# Rule to compile .cpp files to .o files
+# Règle pour compiler les fichiers .cpp en fichiers .o
 %.o: %.cpp
 	$(CC) $(CFLAGS) -c $< -o $@
 
-# Phony target to clean the project
+# Cible factice pour nettoyer le projet
 clean:
 	rm -f $(OBJS) $(EXEC)
