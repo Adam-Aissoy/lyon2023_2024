@@ -1,5 +1,13 @@
 #include <iostream>
 #include <stdlib.h> // pour srand() et rand()
+/* et enfin*/
+/* donne moi une fonction qui retourne la somme de deux entiers */
+int somme(int x, int y){
+    return x+y;
+}
+/*donnes moi une fonction qui fait multiple de x et y */
+
+
 int main() {
     /*
     for(int i = 0; i <10; i++) {
