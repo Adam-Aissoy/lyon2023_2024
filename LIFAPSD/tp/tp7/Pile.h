@@ -7,7 +7,7 @@ typedef ElementTD ElementP;
 
 class Pile {
 public:
-    /* Données membres */
+    /* Donnï¿½es membres */
     /* =============== */
     TableauDynamique t;
 
@@ -17,29 +17,29 @@ public:
     /* Postcondition : la pile est initialement vide */
 
     ~Pile ();
-    /* Postcondition : la mémoire allouée sur le tas est libérée */
+    /* Postcondition : la mï¿½moire allouï¿½e sur le tas est libï¿½rï¿½e */
 
     Pile (const Pile & p);
-    /* Precondition : la pile p est initialisée */
-    /* Postcondition : les deux piles ont le même contenu */
+    /* Precondition : la pile p est initialisï¿½e */
+    /* Postcondition : les deux piles ont le mï¿½me contenu */
 
     void empiler (ElementP e);
     /* Postcondition : le sommet de la pile est une copie de e */
 
     void depiler ();
     /* Precondition : la pile n'est pas vide
-       Postcondition : le sommet de la pile est dépilé ("last in, first out") */
+       Postcondition : le sommet de la pile est dï¿½pilï¿½ ("last in, first out") */
 
     ElementP consulterSommet () const;
     /* Precondition : la pile n'est pas vide
-       Résultat : l'élément qui se trouve au sommet de la pile */
+       Rï¿½sultat : l'ï¿½lï¿½ment qui se trouve au sommet de la pile */
 
     bool estVide () const;
-    /* Résultat : vrai si la pile est vide, faux sinon */
+    /* Rï¿½sultat : vrai si la pile est vide, faux sinon */
 
     void afficher () const;
-    /* Postcondition : les elements contenues dans la pile sont affichées a l'écran,
-     c-à-d les adresses en hexadécimal, en commençant par la base de la pile (le sommet est affiché en dernier) */
+    /* Postcondition : les elements contenues dans la pile sont affichï¿½es a l'ï¿½cran,
+     c-ï¿½-d les adresses en hexadï¿½cimal, en commenï¿½ant par la base de la pile (le sommet est affichï¿½ en dernier) */
 
 };
 
