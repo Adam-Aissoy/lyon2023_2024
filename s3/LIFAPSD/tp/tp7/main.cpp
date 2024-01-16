@@ -17,7 +17,7 @@ int main(){
     std::cout << "Number of elements in the file: " << myFile.nbElements() << std::endl;
 
     // Test premierDeLaFile function
-    ElementF firstElement = myFile.premierDeLaFile();
+    ElementF firstElement = *myFile.premierDeLaFile();
     std::cout << "First element in the file: " << firstElement << std::endl;
 
     // Test defiler function
