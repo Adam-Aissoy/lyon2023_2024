@@ -1,0 +1,5 @@
+First Cm
+-> les langages objets sont des polymorphisme. Que ce qu'une classe, spécialisation d'une classe. Cast done, done casting . 
+-> exemple de vehicule et les heritages. 
+Pour la declaration il faut toujours declarer sur le plus haut d'une classe. 
+Exemple de classe : vehicule ->(ses fils {vehicule motoriser ; vehicule non motoriser});
