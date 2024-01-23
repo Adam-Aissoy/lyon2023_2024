@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <title>LIFWEB TP2 - DOM</title>
+    <script defer="defer" src="LIFWEB%20TP2%20-%20DOM_fichiers/tp2_demo_2.js"></script>
+    <script defer="defer" src="LIFWEB%20TP2%20-%20DOM_fichiers/tp2.js"></script>
+    <script src="LIFWEB%20TP2%20-%20DOM_fichiers/tp2_demo_1.js"></script>
+  </head>
+  <body>
+    <h1>LIFWEB TP2 - DOM</h1>
+
+    <section>
+      <h2>Exercice 0 : préparation</h2>
+
+      <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JS sur MDN</a></li>
+        <li><a href="https://javascript.info/">javascript.info</a></li>
+      </ul>
+      <script>
+        "use strict";
+        console.info(`Le script inline s'exécute...`);
+        console.debug(document.querySelectorAll("a"));
+        console.info(`...le script inline a terminé.`);
+       
+      </script>
+    </section>
+
+    <section>
+      <h2>Exercice 1 : événements</h2>
+
+      <input type="number" id="input-int" value="8">
+      <button id="eval-btn">Calculer</button>
+      <button id="demo-btn">Démo</button>
+      <div><code id="output-code"></code></div>
+      <div><code id="test-code"> hello Adam et si je rajoute</code></div>
+    </section>
+
+    <section>
+      <h2>Exercice 2 : toggling de classe CSS</h2>
+      <button id="toggle-btn">Exercice 2</button>
+    </section>
+
+    <section>
+      <h2>Exercice 3 : affichage d'images</h2>
+      <ul id="images-list">
+        <li>
+          <a href="https://api.cloudly.space/resize/clip/1900/1080/75/aHR0cHM6Ly9zdGF0aWMuYXBpZGFlLXRvdXJpc21lLmNvbS9maWxlc3RvcmUvb2JqZXRzLXRvdXJpc3RpcXVlcy9pbWFnZXMvNC8yNDAvMTQ1NDQ5MDAuanBn/image.jpg">Les coraux de la piscine naturelle d'Oro</a>
+        </li>
+        <li>
+          <a href="https://api.cloudly.space/resize/clip/1900/1080/75/aHR0cHM6Ly9zdGF0aWMuYXBpZGFlLXRvdXJpc21lLmNvbS9maWxlc3RvcmUvb2JqZXRzLXRvdXJpc3RpcXVlcy9pbWFnZXMvNTEvNjAvMTQ0OTg4NjcuanBn/image.jpg">Le Phare Amédée vu du ciel</a>
+        </li>
+        <li>
+          <a href="https://woody.cloudly.space/app/uploads/nc-sud-tourism/2020/04/thumbs/barefoot-bourail-bourail-dean-cropp-access-all-angles-nctps-1-1920x1439.jpg">Le Bonhomme de Bourail</a>
+        </li>
+      </ul>
+      <div id="image-container"></div>
+    </section>
+
+    <section>
+      <h2>Exercice 4 : Konami code</h2>
+    </section>
+
+    <section>
+      <h2>Exercice 5 : Suivi de souris</h2>
+
+      <button id="mouse-btn">Follow mouse</button>
+    </section>
+  
+
+</body></html>
