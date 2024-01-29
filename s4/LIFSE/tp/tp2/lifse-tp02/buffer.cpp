@@ -34,7 +34,7 @@ int main(int argc, char **argv){
     //6) Toujours avec la fonction memcpy(), copiez les éléments d’indices 3 à 7 de str dans les éléments d’indices 3 à 7 de big_tab
     //(documentez vous sur la méthode c_str de la classe std::string). Affichez à nouveau le contenu de big_tab afin de
     //vérifier votre appel.
-    
+    // complete this at home 
 
     return 0;
 }
