@@ -59,5 +59,8 @@
   "ocaml.sandbox": {
     "kind": "global"
   },
-  "CodeGPT.apiKey": "CodeGPT Plus Beta"
+  "CodeGPT.apiKey": "CodeGPT Plus Beta",
+  "files.associations": {
+    "iostream": "cpp"
+  }
 }
