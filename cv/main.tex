@@ -1,0 +1,160 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1, 21 November 2016) written by
+% LianTze Lim (liantze@gmail.com), based on the 
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options. 
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{2E64FE}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+\usepackage[utf8]{inputenc}% encodage, à modifier selon vos habitudes
+\usepackage[scale=0.8]{geometry}% pour régler les marges du CV les options habituelles de l'extension geometry peuvent s'appliquer ici
+
+
+
+
+%% fin ici
+\begin{document}
+\name{ADAM Oumar Adam}
+  \tagline{  }
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+\photo{3cm}{photoAysoy}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{adamoumaradam26@gmail.com}
+  % \phone{+33631779252}
+  \phone{+33631779252}   \location{8 chemin des Barques , 69120 Vaulx-en-Velin, France}   \quad{Age: 25 ans, Célibataire}
+  
+%   \github{} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want. Extend the right margin by 8cm (=6.8cm marginparwidth + 1.2cm marginparsep)
+\begin{adjustwidth}{}{-8cm}
+\makecvheader
+\end{adjustwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+Etudiant en licence 3 informatique. Je suis à la recherche d’un job étudiant à temps partiel. Je suis disponible les week-ends et tous les soirs avec quelques jours dans l’après midi. 
+
+\cvsection[page1sidebar]{EXPÉRIENCES PROFESSIONNELLES}
+\cvevent{}{Agent de quai,Cariste / DB Schenker - Interim}{Juillet 2023 -- Septembre 2023}{Lyon,France}
+
+\divider
+
+\cvevent{}{Facteur/Melee - CDD }{Janvien 2023 -- Avril 2023}{Lyon,France} 
+
+\divider
+\cvevent{}{Responsable de magasin / Dominos Pizza - CDI}{Octobre 2021 -- Septembre 2022} {Rillieux-La-Pape, France}
+\begin{itemize}
+\item Préparation et supervision des inventaires, réapprovisionnement des
+stocks pour éviter les ruptures, établissement des commandes,
+réception des livraisons.
+\item Conduite d'entretiens individuels en vue de l'embauche de nouveaux
+vendeurs, traitement des contrats, formation et accompagnement à
+la prise de poste.
+\item Agencement de l'espace de vente pour optimiser l'expérience
+d'achat et mettre en valeur certains produits, décoration du magasin
+pour les périodes de fêtes.
+%%\item Accueil et prise en charge de la clientèle, vente de produits
+%%correspondants à leurs besoins et à leurs critères de recherche,
+%%préparation et encaissement des commandes.
+%%\item Tenue de réunions du personnel afin de fixer les objectifs et informer
+%%des potentiels changements, point sur l'activité en magasin, recueil
+%%des retours clients.
+
+\end{itemize}
+
+
+
+
+\divider
+
+\cvevent{}{Préparateur de commandes / GXO - CDD}{ Juin 2022 - Aout 2022} {Lyon, France}
+\divider
+
+\cvevent{}{Arbitre de football / FC St Jean le Blanc- Stagiaire}{ Janvier 2020- Juillet 2021} {St Jean Le Blanc, France}
+\divider
+
+
+\cvevent{}{Présentateur culturel / Unis Cité – CDD}{ Septembre 2019 - Janvier 2020} { Orléans, France}
+\begin{itemize}
+\item Ciné débat avec les jeunes Lycéens sur des courts et longs
+métrages.
+\item Contribution à la résolution des problèmes en apportant les
+solutions adaptées et en formulant des propositions d'amélioration.
+\end{itemize}
+\divider
+\cvsection{projets universitaires}
+\cvevent{}{Projet - Université d'Orléans }{Novembre 2020 -- Janvier 2021} {Orléans}
+\begin{itemize}
+\item Jeu de Nîmes - JAVA
+\end{itemize}
+
+\cvevent{}{Projet - Université Claude Bernard Lyon 1 }{ Mars 2022 -- Mai 2022} {Lyon}
+\begin{itemize}
+\item Jeu de Mini-Golf - C++,SDL2
+\end{itemize}
+
+\cvevent{}{Projet - Université Claude Bernard Lyon 1 }{ Mars 2023 -- Mai 2023} {Lyon}
+\begin{itemize}
+\item Jeu de Course de voiture - C++,SDL2, SFML
+\end{itemize}
+
+
+
+\end{document}
