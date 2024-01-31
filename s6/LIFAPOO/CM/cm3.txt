@@ -1,0 +1,3 @@
+this ();
+- constructeur de l'attribut courant 
+il faut savoir certaines choses sur les constructeurs; 

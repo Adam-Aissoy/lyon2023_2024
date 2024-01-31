@@ -1,4 +1,5 @@
-public class Test {
+/* je veux creer une fonction somme */
+public class test {
     public static void main(String[] args) {
         int a = 5;
         int b = 6;
