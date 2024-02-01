@@ -3,6 +3,10 @@
 #include <cstdio>
 #include <sys/time.h>
 #include <math.h>
+#include <thread>
+#include <vector>
+#include <mutex>
+
 
 using namespace std;
 
@@ -59,7 +63,10 @@ double fct(int num, int nbtours) {
 
   return temps_total;
 }
-
+/* my fonction*/
+void threadFunction(int threadNum, int nbtours, double& result) {
+    result = fct(threadNum, nbtours);
+}
 
 int main(int argc, char **argv) {
   int i;
@@ -67,18 +74,22 @@ int main(int argc, char **argv) {
   // Paramètres
   int nbthreads = 10;
   int nbtours = 5;
-  
+  thread thread_AdamAysoy;
+  thread th1, th2;
+
+
   // lecture des arguments
-  if ((argc==2)&&(atoi(argv[1]))) {
+   if ((argc==2)&&(atoi(argv[1]))) {
     // s'il y a un argument numérique on l'utilise pour
     // connaître le nombre de threads/lancements de la fonction
     nbthreads = atoi(argv[1]);
+    //nbthreads = th1(fct,10,nbthreads);
   } else if (argc != 1) {
     // il y a au moins un argument mais qui n'est pas le bon
     cerr << "usage " << argv[0] << " [<nb de lancements et de threads>]"
 	 << endl;
     exit (1);
-  }
+  } 
   cout << "Th principal : lancement de " << nbthreads << " fois la fonction"
        << endl;
   
@@ -90,5 +101,62 @@ int main(int argc, char **argv) {
 
   cout << "Th principal : Le temps total de calcul est " << temps_total << endl;
 
+
+  //////////////////////////////////////////////////////////////
+  // exemple d'utilisation du thread 
+/*   thread_AdamAysoy = thread(fct,10,false);
+  double temps_total1 = fct(10,1);
+  cout << "Th principal Adam : Le temps total1 de calcul est " << temps_total1 << endl;
+
+  while (thread_AdamAysoy.joinable()) {
+    thread_AdamAysoy.join();
+  }  */
+
+   //int nbthreads = 10; 
+   /*  std::vector<std::thread> threads;
+
+    for (int i = 0; i < nbthreads; ++i) {
+        threads.push_back(std::thread(fct, i));
+    }
+
+    for (auto& th : threads) {
+        th.join();
+    }
+ */
+    //const int nbthreads = 4;  
+    //const int nbtours = 10;   
+    vector<thread> threads;
+    vector<double> results(nbthreads);
+
+    // Launch threads
+    for (int i = 0; i < nbthreads; ++i) {
+        threads.push_back(thread(threadFunction, i, nbtours, std::ref(results[i])));
+    }
+    // Wait for threads to finish
+    for (auto& thread : threads) {
+        thread.join();
+    }
+    // Process results if needed
+    for (int i = 0; i < nbthreads; ++i) {
+        cout << "Thread " << i << " result: " << results[i] << " seconds" << std::endl;
+    }
+    // total time  Adam Aysoy
+    double temps_total2 = 0;
+    for (i=0; i<nbthreads; i++) {
+      double temps_fonction = results[i];
+      temps_total2 += temps_fonction;
+    }
+    cout << temps_total2 << endl;
+
+
+    /*
+    int nbthreads2 =20;
+    double temps_total3=0;
+    for(int i=0; i<nbthreads2; i++){
+      double temps_total4 = results[i];
+      temps_total3 += temps_total4;
+    }
+    cout<<temps_total3 << endl;
+  */
   return 0;
 }
