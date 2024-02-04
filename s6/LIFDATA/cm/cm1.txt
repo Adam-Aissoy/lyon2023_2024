@@ -1,0 +1,53 @@
+First class
+lifdata 
+evaluation cr tp (60%)+ evaluation ecrite(40%); 
+-- c'est quoi une donnee?
+    {definition qui ne vient pas du prof}(une donnee est une information brute, c'est un fait, une observation, une mesure, une description ou un enregistrement.)
+    * une description elementaire d'un objet, une observation, une transaction, un signal. 
+-- information: le moyen
+
+globale chapitre : 
+    --chapitre 1 :
+        * Calcul de base d'inertie
+        * extraction de connaissance 
+    -- chapitre 2 :
+        * Analyse factorielle
+    -- chapitre 3 :
+        * classification automatique
+
+travail  des datas : 
+    -- data engeniering:
+        * collecte
+        * stockage
+        * traitement
+        * analyse
+        * visualisation
+    -- data mining:
+        * extraction de connaissance
+        * classification
+        * prediction
+        * clustering
+        * association
+    -- data analyses:
+        * statistique descriptive
+        * statistique inferentielle
+        * analyse multivariee
+        * analyse de donnees qualitatives
+        * analyse de donnees quantitatives
+    -- data scientist:
+        * un data scientist est un professionnel qui collecte, analyse et interprete de grandes quantites de donnees pour aider une entreprise a prendre des decisions commerciales et strategiques.
+
+
+
+
+
+
+Autre note 
+********************************
+-- c'est quoi une base de donnees?
+    * un ensemble de donnees organisees et structurees.
+    * un ensemble de donnees qui sont stockees dans un ordinateur de maniere a etre accessibles et manipulees.
+-- c'est quoi un spectre ?
+    * un spectre est une representation graphique de l'intensite d'un signal en fonction de la frequence.
+fin Autre note
+********************************
