@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>LIFWEB TP1 - Intro JS - Corrigé</title>
+    <meta charset="UTF-8" />
+    <script defer src="./evaluate.js"></script>
+    <script defer src="./tp1.js"></script>
+    <link href="../content/tp1.css" rel="stylesheet" media="all" type="text/css" />
+  </head>
+  <body>
+    <header id="header">
+      <h1>LIFWEB TP1 - Intro JS - Corrigé</h1>
+    </header>
+
+    <main>
+      <nav id="menu">
+        <h2>Menu</h2>
+        <ul>
+          <li>Partie 1</li>
+          <li>Partie 2</li>
+        </ul>
+      </nav>
+
+      <h2 id="exo1">Exercice 1 : Tutoriel</h2>
+      <p>
+        <input type="button" id="eval1" value="Exécuter" />
+      </p>
+      <p>
+        <span id="output1"></span>
+      </p>
+
+      <h2 id="exo2">Exercice 2 : 99 bottles of beer</h2>
+      <p>
+        <span id="output2"></span>
+      </p>
+
+      <p>
+        <input type="text" id="input2" value="2" />
+        <input type="button" id="eval2" value="Bottles" />
+      </p>
+
+      <h2 id="exo3">Exercice 3 : fonction range</h2>
+      <p>
+        <span id="output3"></span>
+      </p>
+
+      <table>
+        <tr>
+          <th>Stop</th>
+          <th>Start</th>
+          <th>Step</th>
+        </tr>
+        <tr>
+          <td><input type="text" id="input3stop" value="10" /></td>
+          <td><input type="text" id="input3start" value="" /></td>
+          <td><input type="text" id="input3step" value="" /></td>
+        </tr>
+      </table>
+
+      <p>
+        <input type="button" id="eval3" value="Range(stop, [start], [step])" />
+        <input type="button" id="reset3" value="Reset" />
+      </p>
+
+      <h2 id="exo4">Exercice 4 (BONUS) : un petit peu de HTML et de CSS</h2>
+
+      <p>Pour avoir un beau rendu comme suit</p>
+      <img src="screenshot.png" alt="Exemple de renud TP1" />
+
+      <h2 id="exo5">Exercice 5 (BONUS) : calculatrice polonaise inverse</h2>
+      <p>
+        <input type="text" id="input5" value="5 1 2 + 4 * + 3 -" />
+        <input type="button" id="eval5" value="Evaluate" />
+        <input type="button" id="reset5" value="Reset" />
+      </p>
+
+      <div>
+        <span id="output5"></span>
+      </div>
+    </main>
+
+    <footer id="footer">
+      Contenus à partir de Emmanuel Coquery, Fabien Duchateau et Romuald Thion.
+      <a
+        href="https://validator.w3.org/nu/?doc=http%3A%2F%2Flifweb.pages.univ-lyon1.fr%2FTP1-JS-Intro%2Fcontent%2FJS1.html"
+        >Validateur W3C</a
+      >
+    </footer>
+  </body>
+</html>
