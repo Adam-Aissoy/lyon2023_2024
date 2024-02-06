@@ -117,8 +117,14 @@ const konamiCode = [
   "a",
 ];
 
-let konamiCount = 0;
 
+// Exercice 0 (PRÉPARATION) : compréhension
+// Supprimer les variables globales utilisées dans les exercices 4 et 5 du TP2-a en limitant leur portée grâce à une IIFE.
+//Dans le code fourni pour ce TP2-b, justifier l’intérêt de la ligne $imageHref.dispatchEvent(new Event("input"));.
+// Toujours dans le même code, explique la ligne !$imageHref.checkValidity() || $imageHref.value === "".
+
+
+// let konamiCount = 0;
 function konamiHandler(event) {
   console.debug(`konamiHandler: event.keyCode=${event.key}, konamiCount=${konamiCount}`);
   if (event.key.toLowerCase() === konamiCode[konamiCount++]) {
