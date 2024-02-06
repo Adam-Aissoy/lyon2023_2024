@@ -1,4 +1,4 @@
-First class
+ First class
 lifdata 
 evaluation cr tp (60%)+ evaluation ecrite(40%); 
 -- c'est quoi une donnee?
