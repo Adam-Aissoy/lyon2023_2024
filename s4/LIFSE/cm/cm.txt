@@ -1,0 +1,172 @@
+*   Processus, partie 1
+1. Introduction
+    On travaille sur un ordinateur avec 'un seul processeur s´equentiel' : a chaque
+    cycle d’instruction, le processeur ex´ecute une et une seule instruction.
+    Cet ordinateur a une m´emoire de masse et une m´emoire vive.
+    'Un programme est une suite d’instructions en langage machine'.
+2. Processus
+    Un processus est un programme en cours d’ex´ecution. Un processus est caract´eris´e par :
+    - un identifiant unique
+    - un ´etat (en cours d’ex´ecution, prˆet, bloqu´e, termin´e)
+    - un compteur ordinal (adresse de la prochaine instruction `a ex´ecuter)
+    - des registres (contenant des donn´ees temporaires)
+    - une pile (contenant des adresses de retour)
+    - une zone de donn´ees (contenant des variables globales)
+    - une zone de code (contenant les instructions du programme)
+    - une zone de tas (contenant des variables dynamiques)
+    - une zone de pile (contenant des variables locales)
+    - un espace d’adressage (contenant des variables statiques)
+    -- notion de processus:
+        -> definition :
+    -- mecanisme d'interruption : 
+        -> le systeme est un programmer qui s'execute 
+
+    -- Ordonnancement des processus :
+        -> definition: un ordinal (adresse de la prochaine instruction
+        a ex´ecuter)
+        -> les etats d'un processus : 
+            - en cours d’ex´ecution
+            - prˆet
+            - bloqu´e
+            - termin´e
+3. Programmation  
+ps -e |wc -l 
+    -- Creation d'un processus :
+        -> fork() : 
+            - definition : * creer un processus fils
+            - exemple : 
+                #include <stdio.h>
+                #include <stdlib.h>
+                #include <unistd.h>
+                int main() {
+                    pid_t pid;
+                    pid = fork();
+                    if (pid == -1) {
+                        perror("fork");
+                        exit(1);
+                    }
+                    if (pid == 0) {
+                        printf("Je suis le fils, mon PID est %d, le PID de mon pere est %d\n", getpid(), getppid());
+                    } else {
+                        printf("Je suis le pere, mon PID est %d, le PID de mon fils est %d\n", getpid(), pid);
+                    }
+                    return 0;
+                }
+        -> exec() : 
+            - definition : * remplace le code du processus courant par un autre code
+            - exemple : 
+                #include <stdio.h>
+                #include <stdlib.h>
+                #include <unistd.h>
+                int main() {
+                    pid_t pid;
+                    pid = fork();
+                    if (pid == -1) {
+                        perror("fork");
+                        exit(1);
+                    }
+                    if (pid == 0) {
+                        printf("Je suis le fils, mon PID est %d, le PID de mon pere est %d\n", getpid(), getppid());
+                        execlp("ls", "ls", "-l", NULL);
+                        perror("execlp");
+                        exit(1);
+                    } else {
+                        printf("Je suis le pere, mon PID est %d, le PID de mon fils est %d\n", getpid(), pid);
+                    }
+                    return 0;
+                }
+        -> wait() : 
+            - definition : * attend la fin d'un processus fils
+            - exemple : 
+                #include <stdio.h>
+                #include <stdlib.h>
+                #include <unistd.h>
+                #include <sys/wait.h>
+                int main() {
+                    pid_t pid;
+                    pid = fork();
+                    if (pid == -1) {
+                        perror("fork");
+                        exit(1);
+                    }
+                    if (pid == 0) {
+                        printf("Je suis le fils, mon PID est %d, le PID de mon pere est %d\n", getpid(), getppid());
+                        execlp("ls", "ls", "-l", NULL);
+                        perror("execlp");
+                        exit(1);
+                    } else {
+                        printf("Je suis le pere, mon PID est %d, le PID de mon fils est %d\n", getpid(), pid);
+                        wait(NULL);
+                    }
+                    return 0;
+                }
+        -> exit() : 
+            - definition : * termine le processus courant
+            - exemple : 
+                #include <stdio.h>
+                #include <stdlib.h>
+                #include <unistd.h>
+                #include <sys/wait.h>
+                int main() {
+                    pid_t pid;
+                    pid = fork();
+                    if (pid == -1) {
+                        perror("fork");
+                        exit(1);
+                    }
+                    if (pid == 0) {
+                        printf("Je suis le fils, mon PID est %d, le PID de mon pere est %d\n", getpid(), getppid());
+                        execlp("ls", "ls", "-l", NULL);
+                        perror("execlp");
+                        exit(1);
+                    } else {
+                        printf("Je suis le pere, mon PID est %d, le PID de mon fils est %d\n", getpid(), pid);
+                        wait(NULL);
+                    }
+                    exit(0);
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////
+** brouillion 
+je veux repondre a ce mail {
+    Madame, Monsieur, 
+
+Je fais suite à la candidature que vous avez adressé à notre partenaire MonJobEtudiant concernant la recherche d’un emploi. 
+
+Notre entreprise est spécialisé dans l’événementiel sur Lyon, et nous recrutons activement des hôtes et hôtesses d’accueil 
+pour des missions ponctuels et/ou régulières. 
+
+Nos missions sont principalement concentrées sur l’agglomération Lyonnaise en fin de semaine.
+
+Si ce genre de mission peuvent vous correspondre merci de m’adresser par retour de mail un CV 
+avec photo nous indiquant vos disponibilités à venir. 
+
+A réception nous vous contacterons afin de convenir d’un RDV à nos bureaux.
+
+Cordialement.
+} 
+reponse d'Adam : 
+{
+    Bonjour, 
+        oui je suis interessé par votre offre, je vous envoie mon CV avec photo.
+        Cordialement.
+        Adam    
+}
+
