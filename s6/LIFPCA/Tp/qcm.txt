@@ -1,0 +1,57 @@
+Une attente passive, dans le contexte des threads et de la programmation concurrente, fait référence à une situation où un thread attend qu'une certaine condition se réalise sans occuper activement le processeur pendant cette attente.
+
+Dans le programme donné, la fonction attendre() utilise une attente passive. Elle utilise la fonction cond_var.wait() qui suspend l'exécution du thread jusqu'à ce que la variable condition go devienne true. Pendant cette attente, le thread n'utilise pas activement le processeur pour vérifier si la condition est remplie, mais il est mis en attente par le système d'exploitation jusqu'à ce qu'il soit notifié par un autre thread de la réalisation de la condition.
+
+Contrairement à une attente active où un thread vérifie périodiquement si la condition est remplie en utilisant une boucle ou une fonction de temporisation, une attente passive est plus efficace car elle permet au processeur de se concentrer sur d'autres tâches lorsque le thread est en attente. Cela réduit la charge sur le processeur et permet une utilisation plus efficace des ressources système.
+
+#include <thread>
+#include <iostream>
+using namespace std;
+
+int v = 0;
+
+void incr(int &v) {
+	++v;
+}
+
+void decr(int &v) {
+	--v;
+}
+
+int main() {
+    thread t2(decr, ref(v));
+	thread t1(incr, ref(v));
+	t2.join();
+	t1.join();
+	
+	cout << v << endl;
+}
+
+#include <thread>
+#include <iostream>
+#include <mutex>
+using namespace std;
+
+int v = 0;
+
+void incr(int &v) {
+	mutex m;
+	m.lock();
+	++v;
+	m.unlock();
+}
+
+void decr(int &v) {
+	mutex m;
+	m.lock();
+	--v;
+	m.unlock();
+}
+
+int main() {
+	thread t1(incr, ref(v));
+	thread t2(decr, ref(v));
+	t1.join();
+	t2.join();
+	cout << v << endl;
+}
