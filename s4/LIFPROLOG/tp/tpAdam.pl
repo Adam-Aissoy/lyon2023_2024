@@ -7,3 +7,11 @@ somme([T|Q], S) :- somme(Q, SQ), S is T + SQ.
 mult(X,Y) :- mult(X,Y,0). /* 0 is the neutral element of the multiplication */
 mult(0,_,0). /* 1 is the negative element of the multiplication
 mult(X,Y,Z) :- X1 is X-1, mult(X1,Y,Z1), Z is Z1+Y. */  
+renverse([],[]).
+renverse([T|Q],R) :- renverse(Q,RQ), append(RQ,[T],R).
+/*Construire l’arbre de résolution des requêtes 
+suivantes : 
+renverse([a,b,c],L)
+renverse(L,[a,z,e])*/
+
+
