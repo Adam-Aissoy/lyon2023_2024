@@ -1,0 +1,37 @@
+-- TD1 
+* Exercice 1 : 
+Soit un ensemble E de 8 clients definis dans R² (2 produits). Les clients possedent tous la meme importance egale à 1. Ils sont separes en 2 profils A1 et A2. 
+
+tableau : 
+| Client i | Produit 1 | Produit 2 | Groupe | 
+| C1       |    3      |    0      |    1   |
+| C2       |    0      |    1      |    1   |
+| C3       |    1      |    1      |    1   |
+| C4       |    0      |    2      |    1   |
+| C5       |    4      |    2      |    2   |
+| C6       |    2      |    3      |    2   |
+| C7       |    4      |    3      |    2   |
+| C8       |    2      |    4      |    2   |
+
+
+    Question 1 :Calculer le centre de gravité de E et la matrice G des centres de gravite fr A1 et A2.
+    le centre de gravite de E est : 
+    G = (1/8) * (3+0+1+0+4+2+4+2, 0+1+1+2+2+3+3+4) = (16/8, 16/8) = (2,2)
+    la matrice G des centres de gravite pour A1 et A2 est : 
+    G(A1) = (1/4) * (3+0+1+0, 0+1+1+2) = (1,1) et G(A2) = (1/4) * (4+2+4+2, 2+3+3+4) = (3,3)
+
+    Question 2 : Calculer la matrice centrée ^X et les matrices centrée (^Y et ^Z) des groupes A1 et A2.
+    la matrice centrée ^X est :
+    ^X = X - G = | 3-2 0-2 1-2 0-2 | = | 1 -2 -1 -2 |
+                 | 0-2 1-2 1-2 2-2 |   | -2 -1 -1 0 |
+
+    les matrices centrée ^Y et ^Z des groupes A1 et A2 sont :
+    ^Y = Y - G(A1) = | 3-1 0-1 1-1 0-1 | = | 2 -1 0 -1 |
+                     | 0-1 1-1 1-1 2-1 |   | -1 0 0 1 |
+
+    ^Z = Z - G(A2) = | 4-3 2-3 4-3 2-3 | = | 1 -1 1 -1 |
+                     | 2-3 3-3 3-3 4-3 |   | -1 0 0 1 |
+    Question 3 : Calculer la matrice d'inertie totale T.
+    la matrice d'inertie totale T est :
+    T = ^X^T * ^X = | 1 -2 -1 -2 | * | 1 0 | = | 1 -2 -1 -2 | * | 1 -2 -1 -2 | = | 1 0 | * | 1 -2 -1 -2 | = | 6 -6 |
+                    | -2 -1 -1 0 |   | 0 1 |   | -2 -1 -1 0 |   | 1 -2 -1 -2 |   | -6 6 |

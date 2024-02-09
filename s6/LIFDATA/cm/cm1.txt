@@ -51,3 +51,56 @@ Autre note
     * un spectre est une representation graphique de l'intensite d'un signal en fonction de la frequence.
 fin Autre note
 ********************************
+
+-> Ici nous on fait Analyse de donnees multi-dimentionnels : 
+    bref :
+        * analyse de donnees multivariees
+        * analyse de donnees qualitatives
+        * analyse de donnees quantitatives
+        * analyse de donnees temporelles
+        * analyse de donnees spatiales
+        * analyse de donnees textuelles
+        * analyse de donnees multimedia
+        * analyse de donnees de reseaux
+        * analyse de donnees de capteurs
+        * analyse de donnees de flux
+        * analyse de donnees de graphes
+        * analyse de donnees de sequences
+        * analyse de donnees de series temporelles
+        * analyse de donnees de signaux
+        * analyse de donnees de documents
+        * analyse de donnees de transactions
+        * analyse de donnees de relations
+        * analyse de donnees de structures
+        * analyse de donnees de systemes
+        * analyse de donnees de processus
+        * analyse de donnees de modeles
+        * analyse de donnees de valeurs
+        * analyse de donnees de variables
+        * analyse de donnees de vecteurs
+        * analyse de donnees de matrices
+        * analyse de donnees de tableaux
+        * analyse de donnees de listes
+        * analyse de donnees de ensembles
+        * analyse de donnees de groupes
+        * analyse de donnees de classes
+        * analyse de donnees de categories
+        * analyse de donnees de clusters
+        * analyse de donnees de nuages
+        * analyse de donnees de courbes
+        * analyse de donnees de surfaces
+        * analyse de donnees de volumes
+        * analyse de donnees de hyper-volumes
+        * analyse de donnees de hyper-surfaces
+        * analyse de donnees de hyper-courbes
+        * analyse de donnees de hyper-nuages
+        * analyse de donnees de hyper-clusters
+        * analyse de donnees de hyper-categories
+        * analyse de donnees de hyper-classes
+        * analyse de donnees de hyper-groupes
+        * analyse de donnees de hyper-ensembles
+        * analyse de donnees de hyper-relations
+        * analyse de donnees de hyper-structures
+        * analyse de donnees de hyper-systemes
+        * analyse de donnees de hyper-processus
+    

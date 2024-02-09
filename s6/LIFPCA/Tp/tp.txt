@@ -1,0 +1,127 @@
+Producteur-Consommateur
+Le but de ce TP est de modifier le code du TP2 (calcul de fractale de Mandelbrot en
+parallèle) pour mettre en place un système de producteur-consommateur.
+Si vous avez bien réussi le TP2, vous pouvez continuer en utilisant votre code. Sinon,
+commencez par récupérer l’archive mandel-threads.zip sur la page du cours. Compilez et
+exécutez le code qu’elle contient et vérifiez qu’il s’agit bien du travail demandé au TP2.
+Au TP2, nous avions utilisé un mutex pour empêcher les accès concurrents à l’affi-
+chage. Cette fois-ci, nous allons dédier un thread à l’affichage (le thread s’occupera d’appeler
+draw_rect()). Ce thread sera le seul à y accéder, donc il n’y aura plus de problème d’ex-
+clusion mutuelle. Les threads de calcul, les draw_screen_worker du TP2, n’appelleront plus
+draw_rect(), mais enverront le rectangle d’écran à afficher au thread chargé de l’affichage.
+La communication entre les threads de calcul et le thread d’affichage se fera au moyen
+d’un schema « producteur-consommateur », comme vu en TD. Il s’agit d’une classe C++ (un
+moniteur), qui expose les méthodes suivantes :
+— void put(element), appelée par le ou les producteurs pour envoyer un élément au
+consommateur. Cette fonction est bloquante si la file est pleine.
+— element get(), appelée par le ou les consommateurs pour récupérer un élément envoyé
+par un producteur. Cette fonction est bloquante si la file est vide.
+Les éléments échangés sont des instances de la structure suivante qui décrit un rectangle à
+afficher :
+1 struct rect {
+2 int slice_number ;
+3 int y_start ;
+4 rect ( int sn , int y ) : slice_number ( sn ) , y_start ( y ) {};
+5 };
+Les threads de calculs enverront les rectangles, par exemple avec :
+1 prod_cons . put ( rect ( slice_number , y ));
+Université Claude Bernard Lyon I 1
+Département d’Informatique
+Le thread chargé de l’affichage récupérera ces valeurs pour appeler draw_rect() dessus
+avec, par exemple :
+1 rect r = prod_cons . get ();
+I.1 Travail à réaliser
+I.1.1 Une classe pour le producteur-consommateur
+— Créez un nouveau fichier C++ dans lequel vous allez écrire le producteur-consommateur.
+Créez une classe ProdCons contenant les deux méthodes put() et get() décrites ci-dessus.
+Si vous êtes à l’aise en C++, écrivez une classe template pour que les arguments de
+put() et get() soient génériques.
+— Ajoutez le nécessaire pour que cette classe puisse agir comme un moniteur.
+— Ajoutez les données nécessaires pour implémenter une file d’attente (FIFO) dans la classe.
+En TD, nous avons codé un buffer circulaire à la main avec un tableau ; vous pouvez
+aussi utiliser une structure toute faite de C++ comme std::list ou mieux, std::queue
+(vous aurez besoin des méthodes push(), pop(), front() et size()).
+— Donnez le corps des fonctions put() et get().
+correction : 
+#include <queue>
+#include <mutex>
+#include <condition_variable>
+#include <iostream>
+#include <thread>
+#include <chrono>
+#include <vector>
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_thread.h>
+#include <SDL2/SDL_image.h>
+#include <SDL2/SDL_ttf.h>
+#include <complex>
+#include <cmath>
+
+struct rect {
+    int slice_number;
+    int y_start;
+    rect(int sn, int y) : slice_number(sn), y_start(y) {};
+};
+
+void put(element);
+element get();
+
+class ProdCons {
+    std::queue<rect> file;
+    std::mutex m;
+    std::condition_variable cv;
+    int max_size;
+public:
+    ProdCons(int max_size) : max_size(max_size) {}
+    void put(rect r) {
+        std::unique_lock<std::mutex> lock(m);
+        cv.wait(lock, [this] { return file.size() < max_size; });
+        file.push(r);
+        cv.notify_all();
+    }
+    rect get() {
+        std::unique_lock<std::mutex> lock(m);
+        cv.wait(lock, [this] { return !file.empty(); });
+        rect r = file.front();
+        file.pop();
+        cv.notify_all();
+        return r;
+    }
+};
+
+
+/////////////////////////////
+TP 3 
+on veut qu'une personne accede a une seule donne. 
+draw_screen_workers(){
+    while(1){
+        .
+        .
+        .
+    }draw_compte
+}
+
+compte_ad_draw(){
+    for(){
+
+    }
+
+;
+std::queue<std:: 
+
+-- les condition_variable en c++: 
+std::condition_variable cv;
+std::mutex m;
+std::unique_lock<std::mutex> lock(m);
+cv.wait(lock, [this] { return file.size() < max_size; });
+exemple : 
+   ** std::unique_lock<std::mutex> lock(m);
+    cv.wait(lock, [this] { return file.size() < max_size; });
+    file.push(r);
+    cv.notify_all();
+    lock.unlock();
+    cv.notify_all();
+    lock.unlock();
+    return r;
+    **
+** Question pour les tps demandés par Adam Aysoy:
