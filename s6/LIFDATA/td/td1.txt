@@ -34,4 +34,10 @@ tableau :
     Question 3 : Calculer la matrice d'inertie totale T.
     la matrice d'inertie totale T est :
     T = ^X^T * ^X = | 1 -2 -1 -2 | * | 1 0 | = | 1 -2 -1 -2 | * | 1 -2 -1 -2 | = | 1 0 | * | 1 -2 -1 -2 | = | 6 -6 |
-                    | -2 -1 -1 0 |   | 0 1 |   | -2 -1 -1 0 |   | 1 -2 -1 -2 |   | -6 6 |
+                    | -2 -1 -1 0 |   | 0 1 |   | -2 -1 -1 0 |   | 1 -2 -1 -2 |   | -6 6 | 
+    Question 4 : Calculer la matrice d'inertie intra-groupe W et la matrice d'inter-groupe B.
+    la matrice d'inertie intra-groupe W est :
+    W = ^Y^T * ^Y + ^Z^T * ^Z = | 2 -1 0 -1 | * | 2 -1 0 -1 | + | 1 -1 1 -1 | * | 1 -1 1 -1 | = | 6 -3 0 -3 | + | 4 -2 2 -2 | = | 10 -5 2 -5 |
+                                 | -1 0 0 1 |   | -1 0 0 1 |   | -1 0 0 1 |   | 2 -1 0 -1 |   | 2 -1 0 -1 |
+    la matrice d'inter-groupe B est :
+    

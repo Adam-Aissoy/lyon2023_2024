@@ -103,4 +103,10 @@ fin Autre note
         * analyse de donnees de hyper-structures
         * analyse de donnees de hyper-systemes
         * analyse de donnees de hyper-processus
-    
+
+    definition 7 : inertie suivante une direction
+    * l'inertie est une mesure de la dispersion des donnees autour de leur centre de gravite.
+    -- U^t T U : L'inertie totale sur U: 
+        - sa dimention 
+        // explication : 
+
