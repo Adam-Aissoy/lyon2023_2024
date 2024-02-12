@@ -68,19 +68,11 @@ let varAdamAysoy = 2+3;;
 let rec insere_arbre_bin_recherche (a : arbre_bin) (element : int ) = 
   match a with 
   | ABVide -> ABNoeud(element,ABVide,ABVide)
-  | ABNoeud(valeur, fils_gauche,fils_droit) -> 
+  | ABNoeud(valeur, fils_gauche,fils_droit) -> *)
       if valeur > element then ABNoeud (valeur,insere_arbre_bin_recherche  fils_gauche element , fils_droit) 
       else if valeur < element then ABNoeud(valeur ,fils_gauche ,insere_arbre_bin_recherche  fils_droit element)
       else  
-        ABNoeud(valeur,fils_gauche,fils_droit)
-    ;;
-
-
-
-
-(** test Adam Aysoy *)
-let arbre_binaire_recherche = ABVide;;
-let arbre_apres_insertion = insere_arbre_bin_recherche arbre_binaire_recherche 5 ;;
+        ABNoeud(valeur,fils_ga*)sere_arbre_bin_recherche arbre_binaire_recherche 5 ;;
 let arbreAdamAysoy = ABVide;;
 let arbreTest = insere_arbre_bin_recherche arbreAdamAysoy 5;;
 let arbreTest2 = insere_arbre_bin_recherche arbreTest 6;;
@@ -93,19 +85,79 @@ list_of_arbre_bin *)
 
 
 (* Fonction pour obtenir une liste correspondant à un parcours infixe de l'arbre binaire *)
+
 let rec list_of_arbre_bin arbre =
   match arbre with
   | ABVide -> []
   | ABNoeud (valeur, fils_gauche, fils_droit) ->
       list_of_arbre_bin fils_gauche @ [valeur] @ list_of_arbre_bin fils_droit
   ;;
-(* Exemple d'utilisation et test avec assert *)
-let arbre_binaire_exemple =
-  ABNoeud (2,
-    ABNoeud (1, ABVide, ABVide),
-    ABNoeud (3, ABVide, ABVide))
-    > Tester `insere_arbre_bin_recherche` en utilisant `assert`.
+
+
+
+(*Tester la fonction `list_of_arbre_bin` avec `assert`.*)
+
+assert (list_of_arbre_bin ABVide = []);;
+assert (list_of_arbre_bin arbre_Adam_Aysoy = [1;2;3;4;5] );;
+assert (list_of_arbre_bin abinaire = [ 1; 6; 47; 7; 3 ]);;
+assert (list_of_arbre_bin abinaire1 = [ 8 ]);;
+
+
+
+(*> Écrire la fonction `arbre_bin_rech_of_int_list` qui transforme une liste en arbre binaire **de recherche**.
+
+On utilisera `insere_arbre_bin_recherche` dans cette fonction.
+
+> Tester `arbre_bin_rech_of_int_list` en utilisant `assert` et `list_of_arbre_bin` afin de simplifier l'écriture des tests.
+
+Quelle propriété des arbres est-elle utile pour prédire le résultat de l'appel `list_of_arbre_bin (arbre_bin_rech_of_int_list l)` sur une liste `l` donnée ?
+
+> Coder la fonction `tri_abr` qui utilise des fonctions codées dans ce TP pour trier une liste d'int. Tester cette fonction avec `assert`.*)
+
+(*let rev arbre_bin_rech_of_int_list = function *)
+
+
+(*
+## 3. Évaluation d'expressions arithmétiques
+
+Dans cette partie, on va implémenter un évaluateur d'expressions arithmétiques.
+
+On commence par se donner un type pour représenter les différents opérateurs possibles:
+
+```ocaml
+type binop = Plus | Moins | Mult
+```
+
+On se donne ensuite un type pour représenter les expressions :
+
+```ocaml
+type expr =
+  | Cst of int
+  | Binop of binop * expr * expr
+```
+   
+*) 
+type binop = Plus | Moins | Mult;;
+type expr =
+  | Cst of int
+  | Binop of binop * expr * expr
 ;;
-assert (list_of_arbre_bin arbre_binaire_exemple = [1; 2; 3]);;
 
+let e1 = Binop ( Plus , Cst 2 , Cst 3 );;  
+let e2 = Cst 2;;  
+let e3 = Binop (Moins , Cst 3 , e1);;
+(* Exemple type expr*)
 
+let rec string_of_expr (e : expr) : string = 
+  let string_of_binop (operateur : binop)=
+    match operateur with 
+    |Plus -> "+"
+    |Moins -> "-"
+    |Mult -> "*"
+in match e with
+  |Cst entier -> string_of_int entier
+  | Binop (operateur , Cst entier1,Cst entier2) -> string_of_expr entier1 ^ string_of_binop operateur ^string_of_expr entier2;;
+
+  let chaineTranslate = 
+    string_of_expr ( Binop (Plus , Cst 45, Cst 12));;
+  let chaineTranslate2 = string_of_expr (Cst 3);;
