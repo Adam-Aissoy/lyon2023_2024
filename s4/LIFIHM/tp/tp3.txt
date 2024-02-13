@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 les details de mon application {
 
     
@@ -207,3 +208,213 @@ Afin d'évaluer la maquette faite lors du TP précédent, vous allez mettre en p
 /******************   re Tp   ******************/
 
 
+=======
+les details de mon application {
+
+    
+Utilisateur 
+
+- Recherche avancée de livres dans une bibliothèque (genre, auteur, matière..)
+
+- Pouvoir lire le livre dans l’application quand emprunté.
+
+- Gps pour se diriger dans la bibliothèque
+
+- Possibilité de réserver des livres directement sur l’application et les récupérer 
+
+- Recherche par mots clés dans tout les livres de la bibliothèque
+
+- Avis de lecteurs sur un livre donné
+
+- Mode hors ligne
+Admin
+
+- Ajouter ou enlever des livres de la base de données de la bibliothèque
+
+- Consulter ou modifier les réservations 
+
+- Bloquer la réservation si problème
+
+- Gestion des commentaires dans l’application
+
+- Contacter les étudiants à travers la messagerie
+
+- Envoyer des recommandations	 aux users de l’applications
+
+Caractéristiques 
+
+- Mode hors ligne
+
+
+Persona 1 : Étudiant
+
+Cas d’usage: Emprun de livre physique et numérique | Recherche intelligente d’informations dans une base de données
+
+Scénario: I: L’étudiant se connecte sur l’application et veut emprunter un livre sur l’anatomie pour un devoir. Le livre est déjà emprunté donc il le lit en ligne grâce au format numérique. De plus, il utilise la recherche intelligente afin de trouver la partie qu’il l’intéresse.
+
+Evaluation:
+L’étudiant a accès au livre et trouve l’information recherchée.
+
+Persona 2: admin
+
+Cas d’usage: Accès aux réservations et la base de données |
+				  Gestion des commentaires 
+
+Scénario: 
+Un commentaire offensant a été posté sur l’application. L’admin donne un avertissement et est capable de bannir le l’utilisateur si il recommence.
+
+Caractéristiques
+
+Méthode agile car le client est au coeur du processus car ce sont eux qui modifient la base de donnée.
+
+Technique de recueil d’informations 
+
+Brainstorming 
+
+
+
+
+Ecran utilisateur:
+
+Écran 1:
+
+Recherche du livre avancée
+
+Ecran 2 :
+
+Page du livre 
+
+Ecran 3:
+
+Page de réservation avec choix durée et une date limite
+
+Ecran 4:
+
+Commentaires et avis
+
+Ecran admin:
+
+Ecran 1: 
+
+Base de données des livres
+
+Ecran 2 : 
+
+Page du livre avec bouton modification des données
+
+Ecran 3:
+
+Page avec modifications des données et date et Etudiant qui emprunte le livre
+
+Ecran 4:
+
+Page de messagerie avec l’étudiant en question
+
+************************************************
+** preparation de la video : 
+- presentation de l'application : 
+    * nom : LibroFinder 
+    * description : application de recherche de livres et de gestion de bibliothèque
+    * public cible : etudiants et administrateurs de bibliothèques
+    * objectif : faciliter la recherche de livres et la gestion des emprunts
+   
+- presentation des fonctionnalités:
+    * recherche avancée de livres
+    * lecture de livres en ligne
+    * reservation de livres
+    * recherche par mots clés
+    * avis de lecteurs
+    * mode hors ligne
+    * gestion des livres
+    * gestion des reservations
+    * gestion des commentaires
+    * messagerie
+
+- presentation des cas d'usage : 
+    * etudiant : emprunt de livre, lecture en ligne, recherche de livre, reservation
+    * admin : gestion des livres, gestion des reservations, gestion des commentaires, messagerie
+- presentation des personas
+- presentation des caracteristiques
+- presentation des methodes de recueil d'informations
+- presentation des ecrans utilisateurs
+- presentation des ecrans admin
+- presentation des scénarios
+
+}
+
+
+TP 3 : Tests utilisateurs
+Afin d'évaluer la maquette faite lors du TP précédent, vous allez mettre en place 3 différents tests avec Quant-UX à effectuer auprès d'utilisateurs. Pour chaque test, vous devez commencer par choisir le(s) écran(s) concerné(s) et l'hypothèse que vous allez étudier.
+
+1. Test de perception (⏱ 15 min): Vous allez créer puis diffuser un questionnaire en ligne montrant votre maquette, avec l'outil de votre choix, par exemple Google Form.
+    * Commencez par choisir l'écran qui fera l'objet du test : il doit être adapté à ce type de test.
+    *Créez le questionnaire (➕ en bas à droite de Google Form) et attribuez-lui un titre pertinent du point de vue de l'utilisateur.
+    *La première "question" consistera à afficher l'écran à évaluer : ajoutez-le sous la forme d'une image (menu vertical à droite). Utilisez le titre pour indiquer la consigne à vos futurs testeurs.
+    *Pour que l'écran ne soit pas visible lorsque l'utilisateur répondra aux questions (afin de respecter le fonctionnement d'un test de perception), vous allez ajouter une section ; après la première question, on doit passer à la section suivante.
+    *Dans la seconde section, ajoutez les questions (4 doivent suffire) à poser à vos utilisateurs : choisissez des types de questions adaptés, combinez questions ouvertes et questions fermées, formulez soigneusement les questions, choisissez des échelles adaptées parmi les échelles validées scientifiquement.
+    *Testez votre questionnaire (mode aperçu dans le menu du haut).
+    *Diffusez votre questionnaire à vos testeurs : 3 à 5 de vos collègues de la salle de TP. N'utilisez pas l'envoi par mail intégré, mais communiquez vous-même le lien aux testeurs : soit par mail, soit en générant un QR code (via la fonctionnalité Enregistrer et partager de Chrome, ou avec un outil externe) que vos voisins pourront flasher sur votre écran.
+    *Pendant que vos testeurs évaluent votre maquette, effectuez également leurs tests.
+    *Il ne vous reste plus qu'à analyser les résultats. Consultez vos résultats dans l'onglet Réponses. Par exemple, quels sont les éléments de votre interface que les utilisateurs ont retenus ? Est-ce que vous vous attendiez à ce résultat ?
+    *Pour garder une trace de ces résultats et les importer dans votre rapport, vous pouvez télécharger le fichier csv des réponses, copier les graphiques et enregistrez dans un fichier PDF la synthèse proposée par l'outil de questionnaire (Imprimer dans le menu tout en haut, puis de nouveau Imprimer en choisissant bien Enregistrer au format PDF dans les options d'impression).
+2. Test A/B (⏱ 45 min). Pour cela vous allez retravailler votre maquette avec Quant-UX.
+    *Commencez par choisir l'écran concerné, pertinent pour un test A/B .
+    *Créez une version alternative de cet écran. Évidemment, vous utiliserez l'outil de duplication d'écran pour gagner du temps.
+    *Prenez le temps de bien positionner vos différents écrans dans Quant-UX pour vous y retrouver facilement par la suite.
+    *Ajoutez un nouvel élément logique OR entre d'une part l'élément d'interface qui lance les 2 versions et d'autre part les deux écrans testés par le test A/B. Il ne vous reste plus qu'à indiquer que le choix entre les alternatives se fera lors du test A/B.
+    *Attention, vous devez être dans la vue Prototype pour créer les liens, mais dans la vue Design pour l'exploiter sous forme de test A/B.
+    *Vous pouvez maintenant tester le résultat (▶ Simulate) : en lançant plusieurs fois la simulation, vous tomberez parfois sur une version, parfois sur l'autre.
+    *Vous êtes maintenant prêts à diffuser votre test A/B.
+    *Pour cela, vous devez afficher l'écran de gestion de la maquette (Back to prototypes dans le menu principal) : copiez, puis diffusez le lien le test (bouton Share) comme lors du test précédent.
+    *Si votre maquette est au format smartphone, vous pouvez directement utiliser le QR code qui s'affiche en mode simulation.
+    *Pendant que vos testeurs évaluent votre maquette, effectuez également leurs tests.
+    *Maintenant, vous pouvez analyser les résultats de votre test.
+    *Consultez vos résultats : l'onglet Test liste les tests effectués (il est même possible de rejouer les tests) ; le tableau de bord (Dashboard) synthétise les résultats ; l'onglet Heat map donne un aperçu des parcours des testeurs sur les différents écrans et permet d'accéder aux détails (bouton Open analytic canvas). Explorez les différentes possibilités qui s'offrent à vous.
+    *Quel est le temps moyen que passent vos utilisateurs sur l'écran testé dans les 2 versions testées ?
+    *Pour garder une trace de ces résultats et les importer dans votre rapport, vous pouvez télécharger certaines données et faire des captures d'écrans des autres résultats.
+3. Test utilisateur classique (⏱ 15 min). Pour cela vous allez observer un individu utiliser votre maquette.
+    *Commencez par construire le scénario d'usage du test.
+    *Préparez votre grille d'évaluation (plutôt sur papier, car votre ordinateur sera mobilisé par votre utilisateur).
+    *Faites passer le test à l'un de vos voisins de TP qui travaille au même rythme que vous (et faites le sien). Prenez des notes soigneusement à l'aide de votre grille. Attention à ne pas trop intervenir dans l'activité de votre utilisateur.
+    *Interprétez les résultats.
+4. Synthèse (⏱ 15 min). Vous allez maintenant rédiger un rapport synthétisant les résultats de vos 3 tests, en respectant le modèle donné (PDF - docx). Pour chacun des tests :
+    *présentez brièvement l'objectif
+    *décrivez le test
+    *montrez les résultats obtenus
+    *puis formulez vos conclusions.
+// solutions: 
+1. Test de perception
+    * Ecran choisi : Page de réservation avec choix durée et une date limite
+    * Hypothèse : Les utilisateurs comprennent-ils bien comment réserver un livre ?
+    * Questionnaire : 
+        * Question 1 : Affichez l'écran de réservation avec choix durée et une date limite. 
+        * Question 2 : Quelle est votre impression générale sur cet écran ?
+        * Question 3 : Avez-vous compris comment réserver un livre ?
+        * Question 4 : Quelle est la durée maximale de réservation d'un livre ?
+    * Diffusion du questionnaire : 3 à 5 de vos collègues de la salle de TP
+    * Analyse des résultats : 
+        * Les utilisateurs ont-ils compris comment réserver un livre ?
+        * Quelle est la durée maximale de réservation d'un livre ?
+2. Test A/B
+    * Ecran choisi : Page de réservation avec choix durée et une date limite
+    * Hypothèse : Les utilisateurs préfèrent-ils une date limite fixe ou une durée maximale de réservation ?
+    * Diffusion du test A/B : 3 à 5 de vos collègues de la salle de TP
+    * Analyse des résultats : 
+        * Quelle est le temps moyen que passent vos utilisateurs sur l'écran testé dans les 2 versions testées ?
+3. Test utilisateur classique
+    * Scénario d'usage du test : Un utilisateur veut réserver un livre pour une durée de 15 jours.
+    * Grille d'évaluation : 
+        * L'utilisateur a-t-il réussi à réserver un livre ?
+        * L'utilisateur a-t-il compris comment réserver un livre ?
+        * L'utilisateur a-t-il trouvé la durée maximale de réservation d'un livre ?
+    * Interprétation des résultats : 
+        * Les utilisateurs ont-ils réussi à réserver un livre ?
+        * Les utilisateurs ont-ils compris comment réserver un livre ?
+        * Les utilisateurs ont-ils trouvé la durée maximale de réservation d'un livre ?
+4. Synthèse
+    * Présentation de l'objectif
+    * Description des tests
+    * Résultats obtenus
+    * Conclusions
+    
+>>>>>>> 46e6f35905842048c019eb2acba698937b683b6d
