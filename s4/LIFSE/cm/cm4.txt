@@ -1,0 +1,36 @@
+************** Les signaux ******************
+1. Introduction : 
+    Le systeme s'epare les processus pour eviter les perturbations, assurer la
+    protection des donnees, pour faciliter la gestion.
+    Les signaux sont des messages envoyes par le noyau a un processus pour l'informer.
+2. Signaux : 
+    * Gestion des signaux en C/C++
+    SIGINT 2 (Ctrl+c) : Interruption du processus
+    SIGKILL 9 : 
+    SIGUSR1 10,
+    SIGTERM 15,
+    SIGSCONT 18,
+    SIGSTOP 19 (Ctrl+z), . . .
+
+    //*//
+    bool terminer = false; // drapeau de terminaison
+    int cpt = 0; // compte les signaux SIGINT re¸cus
+    void gest(int s) { // gestionnaire de signal
+        cpt++;
+        std::cout << "SIGINT re¸cu (cpt = " << cpt << ")" << std::endl;
+        if(cpt == 5) terminer = true;
+    }
+int main(void) {
+    struct sigaction s;
+    sigaction(SIGINT, NULL, &s);
+    s.sa handler = gest;
+    sigaction(SIGINT, &s, NULL);
+    while(true) {
+        std::cout << "RRRRR..." << std::endl;
+        sleep(1);
+        if(terminer) break;
+    }
+    std::cout << "Je me termine..." << std::endl;
+    return 0;
+}
+    //*//

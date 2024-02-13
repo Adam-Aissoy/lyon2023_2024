@@ -1,20 +1,24 @@
-  #include <stdio.h>
+#include <iostream>
+#include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-int main() {
-    pid_t pid;
-    pid = fork();
-    if (pid == -1) {
-        perror("fork");
-        exit(1);
+bool terminer = false; // drapeau de terminaison
+    int cpt = 0; // compte les signaux SIGINT re¸cus
+    void gest(int s) { // gestionnaire de signal
+        cpt++;
+        std::cout << "SIGINT re¸cu (cpt = " << cpt << ")" << std::endl;
+        if(cpt == 5) terminer = true;
     }
-    if (pid == 0) {
-        printf("Je suis le fils, mon PID est %d, le PID de mon pere est %d\n", getpid(), getppid());
-        execlp("ls", "ls", "-l", NULL);
-        perror("execlp");
-        exit(1);
-    } else {
-        printf("Je suis le pere, mon PID est %d, le PID de mon fils est %d\n", getpid(), pid);
+int main(void) {
+    struct sigaction s;
+    sigaction(SIGINT, NULL, &s);
+    s.sa handler = gest;
+    sigaction(SIGINT, &s, NULL);
+    while(true) {
+        std::cout << "RRRRR..." << std::endl;
+        sleep(1);
+        if(terminer) break;
     }
+    std::cout << "Je me termine..." << std::endl;
     return 0;
 }

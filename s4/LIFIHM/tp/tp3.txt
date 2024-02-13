@@ -201,8 +201,9 @@ Afin d'évaluer la maquette faite lors du TP précédent, vous allez mettre en p
         * Les utilisateurs ont-ils compris comment réserver un livre ?
         * Les utilisateurs ont-ils trouvé la durée maximale de réservation d'un livre ?
 4. Synthèse
-    * Présentation de l'objectif
-    * Description des tests
-    * Résultats obtenus
-    * Conclusions
+  
     
+
+/******************   re Tp   ******************/
+
+
