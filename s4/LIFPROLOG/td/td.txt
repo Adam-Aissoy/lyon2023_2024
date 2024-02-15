@@ -3,3 +3,39 @@
     - append([X|L1], L2, [X|L3]) :- append(L1, L2, L3).
 -- 
 
+Définir un prédicat qui calcule la hauteur d’un
+arbre binaire :
+ La hauteur d’une feuille est zéro
+ La hauteur d’un nœud est
+1+max(hauteur_fils_gauche, hauteur_fils_droit)
+¢ Définir un prédicat qui calcule le maximum d’un
+arbre binaire de nombres.
+¢ Définir un prédicat qui calcule la liste résultant du
+parcours infixe d'un arbre binaire. 
+/** bing Adam Aysoy */
+% Définition de l'arbre binaire
+% Un arbre est soit une feuille avec une valeur, soit un nœud avec une valeur et deux sous-arbres.
+arbre(Feuille) :- atom(Feuille).
+arbre(noeud(Valeur, Gauche, Droite)) :- atom(Valeur), arbre(Gauche), arbre(Droite).
+
+% Calcul de la hauteur d'un arbre binaire
+hauteur(Feuille, 0) :- arbre(Feuille).
+hauteur(noeud(_, Gauche, Droite), Hauteur) :-
+    hauteur(Gauche, HauteurGauche),
+    hauteur(Droite, HauteurDroite),
+    Hauteur is 1 + max(HauteurGauche, HauteurDroite).
+
+% Calcul du maximum d'un arbre binaire de nombres
+maximum(Feuille, Feuille) :- arbre(Feuille).
+maximum(noeud(Valeur, Gauche, Droite), Maximum) :-
+    maximum(Gauche, MaximumGauche),
+    maximum(Droite, MaximumDroite),
+    Maximum is max(Valeur, max(MaximumGauche, MaximumDroite)).
+
+% Calcul de la liste résultant du parcours infixe d'un arbre binaire
+parcours_infixe(Feuille, [Feuille]) :- arbre(Feuille).
+parcours_infixe(noeud(Valeur, Gauche, Droite), Liste) :-
+    parcours_infixe(Gauche, ListeGauche),
+    parcours_infixe(Droite, ListeDroite),
+    append(ListeGauche, [Valeur|ListeDroite], Liste).
+
