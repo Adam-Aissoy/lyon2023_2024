@@ -1,0 +1,87 @@
+chapitre 2 : visualisation des donnees multipli-dimentionnels
+
+Xi appartient a R^p.
+p=1 -> on peut visualiser
+p=2 -> on peut visualiser
+p=3 -> on peut visualiser
+p>3 -> on ne peut pas visualiser : 
+    - on peut faire des visualisations 3D mais c'est difficile a interpreter
+    - on peut faire des visualisations 2D mais on perd de l'information
+on va utiliser les spectres. 
+* Mirage de la visualisation : 
+    - on peut avoir des points tres proches qui sont tres eloignes dans l'espace
+    - on peut avoir des points tres eloignes qui sont tres proches dans l'espace
+    def : le Mirage de la visualisation est le fait que la distance entre deux points dans l'espace n'est pas necessairement representatif de la distance entre ces deux points dans l'espace des donnees.
+Analyse en composante principale : ACP
+* Objectif : 
+    - reduire la dimension des donnees
+    - visualiser les donnees
+* Principe :
+    - on cherche les directions dans lesquelles les donnees sont les plus variables
+    - on projette les donnees dans ces directions
+* Methode :
+    - on cherche les vecteurs propres de la matrice de covariance
+    - on projette les donnees dans les directions des vecteurs propres
+* Application :
+    - on peut visualiser les donnees
+    - on peut reduire la dimension des donnees
+* Probleme :
+    - on perd de l'information
+    - on perd de l'information
+* Exemple :
+    - on a des donnees en 3D
+    - on cherche les directions dans lesquelles les donnees sont les plus variables
+    - on projette les donnees dans ces directions
+    - on obtient des donnees en 2D
+Cours prof : 
+ definition : le principe consite a: 
+    ** remplacer les variables reelles par des variables synthetiques tout en conservant un max d'info. 
+    ** reduir le nombre de dimension tout en fournissant un support visuel. 
+Algo : 
+    ** on calcule la matrice de covariance
+    ** on calcule les vecteurs propres de la matrice de covariance
+    ** on projette les donnees dans les directions des vecteurs propres
+    ** on obtient des donnees en 2D
+    cours prof : 
+    -> Entree : les donnees sont representees dans une matrice X(n*p)
+    ligne : 1......j........p
+    colonne : 1......i........n
+    xij
+    matrice 1\1........j.......p
+            .
+            .
+            .
+            .
+            i         Xij
+            .
+            .
+            .
+            n      
+               
+    on note par : 
+       * Cj: le valeur correspondant a la j^ieme colone de X
+       * Li : le valeur correspondant a la i^ieme ligne de X
+    -> Etude dans R^p : le principe est de chercher une variable synthetiques F telque la distance des points Li à l'origine soit la plus conservée possible.
+    -> Comment constuire F? 
+        F est construite à partir d'une combinaison lineaire des variables reelles.
+        Soit alpha = (alpha1..........alphap); valeur absolu de alpha ||alpha|| = 1
+        alpha =(alpha1
+                .
+                .
+                .
+                .
+                .
+                alphap)
+            phii= somme de j  allant de 1 à p alphai xij = alpha Li
+
+        F= ( phi1
+            phi2
+            .
+            .
+            .
+            phin)
+        -> comment trouver le bon alpha?
+        
+        note ecrite . 
+          
+

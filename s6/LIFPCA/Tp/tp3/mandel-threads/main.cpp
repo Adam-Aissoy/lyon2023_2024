@@ -12,7 +12,7 @@
 
 #include "mandel.h"
 #include "display.h"
-
+#include "ProdCons.h"
 #include <vector>
 #include <thread>
 #include <mutex>
@@ -81,7 +81,7 @@ void draw_screen_worker(int & nb_slices) {
 		nb_slices++;
 		compute_and_draw_slice(i);
 		// Ajout par Adam Aysoy
-		//nb_slices++;
+		nb_slices++;
 	}
 }
 
@@ -154,6 +154,30 @@ double timevalsub(struct timeval *tv1, const struct timeval *tv2) {
 	res = tv2->tv_sec - tv1->tv_sec;
 	res += (tv2->tv_usec - tv1->tv_usec)*1.0/1000000;
 	return res;
+}
+/////////// Adam Aysoy
+// Instanciation de ProdCons
+ProdCons prod_cons(max_size); // Assurez-vous d'adapter max_size en fonction de vos besoins
+
+// Fonction exécutée par le thread d'affichage
+void x_thread_function() {
+    while (true) {
+        rect r = prod_cons.get(); // Récupère un rectangle à afficher
+        draw_rect(r.slice_number, r.y_start); // Affiche le rectangle
+    }
+}
+
+// Fonction principale pour le calcul et l'affichage
+void draw_screen_thread() {
+    std::thread t(x_thread_function); // Lance le thread d'affichage
+
+    // Boucle pour calculer et envoyer les rectangles à afficher
+    for (int i = 0; i < number_of_slices; i++) {
+        compute_and_draw_slice(i); // Calcule et dessine le rectangle
+        prod_cons.put(rect(i, y)); // Envoie le rectangle à afficher
+    }
+
+    t.join(); // Attend la fin du thread d'affichage
 }
 
 int main(int argc, char ** argv) {
@@ -228,7 +252,10 @@ int main(int argc, char ** argv) {
 		if (auto_resize) resize_according_to_mouse();
 		if (! auto_loop) exit(0);
 	}
-	// test compilation 
-	// suite main ProdCons
-	
 }
+
+
+
+
+	
+

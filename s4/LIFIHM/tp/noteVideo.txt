@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 Utilisateur 
@@ -141,3 +142,148 @@ Page de messagerie avec l’étudiant en question
     - un admin qui consulte la base de données
 
 -- 
+=======
+
+
+Utilisateur 
+
+- Recherche avancée de livres dans une bibliothèque (genre, auteur, matière..)
+
+- Pouvoir lire le livre dans l’application quand emprunté.
+
+- Gps pour se diriger dans la bibliothèque
+
+- Possibilité de réserver des livres directement sur l’application et les récupérer 
+
+- Recherche par mots clés dans tout les livres de la bibliothèque
+
+- Avis de lecteurs sur un livre donné
+
+- Mode hors ligne
+Admin
+
+- Ajouter ou enlever des livres de la base de données de la bibliothèque
+
+- Consulter ou modifier les réservations 
+
+- Bloquer la réservation si problème
+
+- Gestion des commentaires dans l’application
+
+- Contacter les étudiants à travers la messagerie
+
+- Envoyer des recommandations	 aux users de l’applications
+
+Caractéristiques 
+
+- Mode hors ligne
+
+
+Persona 1 : Étudiant
+
+Cas d’usage: Emprun de livre physique et numérique | Recherche intelligente d’informations dans une base de données
+
+Scénario: I: L’étudiant se connecte sur l’application et veut emprunter un livre sur l’anatomie pour un devoir. Le livre est déjà emprunté donc il le lit en ligne grâce au format numérique. De plus, il utilise la recherche intelligente afin de trouver la partie qu’il l’intéresse.
+
+Evaluation:
+L’étudiant a accès au livre et trouve l’information recherchée.
+
+Persona 2: admin
+
+Cas d’usage: Accès aux réservations et la base de données |
+				  Gestion des commentaires 
+
+Scénario: 
+Un commentaire offensant a été posté sur l’application. L’admin donne un avertissement et est capable de bannir le l’utilisateur si il recommence.
+
+Caractéristiques
+
+Méthode agile car le client est au coeur du processus car ce sont eux qui modifient la base de donnée.
+
+Technique de recueil d’informations 
+
+Brainstorming 
+
+
+
+
+Ecran utilisateur:
+
+Écran 1:
+
+Recherche du livre avancée
+
+Ecran 2 :
+
+Page du livre 
+
+Ecran 3:
+
+Page de réservation avec choix durée et une date limite
+
+Ecran 4:
+
+Commentaires et avis
+
+Ecran admin:
+
+Ecran 1: 
+
+Base de données des livres
+
+Ecran 2 : 
+
+Page du livre avec bouton modification des données
+
+Ecran 3:
+
+Page avec modifications des données et date et Etudiant qui emprunte le livre
+
+Ecran 4:
+
+Page de messagerie avec l’étudiant en question
+
+************************************************
+** preparation de la video : 
+- presentation de l'application : 
+    * nom : LibroFinder 
+    * description : application de recherche de livres et de gestion de bibliothèque
+    * public cible : etudiants et administrateurs de bibliothèques
+    * objectif : faciliter la recherche de livres et la gestion des emprunts
+   
+- presentation des fonctionnalités:
+    * recherche avancée de livres
+    * lecture de livres en ligne
+    * reservation de livres
+    * recherche par mots clés
+    * avis de lecteurs
+    * mode hors ligne
+    * gestion des livres
+    * gestion des reservations
+    * gestion des commentaires
+    * messagerie
+
+- presentation des cas d'usage : 
+    * etudiant : emprunt de livre, lecture en ligne, recherche de livre, reservation
+    * admin : gestion des livres, gestion des reservations, gestion des commentaires, messagerie
+- presentation des personas
+- presentation des caracteristiques
+- presentation des methodes de recueil d'informations
+- presentation des ecrans utilisateurs
+- presentation des ecrans admin
+- presentation des scénarios
+
+** petite scene pour la video: 
+    - un etudiant qui emprunte un livre
+    - un admin qui modifie les données d'un livre
+    - un admin qui banni un utilisateur
+    - un etudiant qui reserve un livre
+    - un etudiant qui lit un livre en ligne
+    - un etudiant qui recherche un livre
+    - un admin qui consulte les reservations
+    - un admin qui consulte les commentaires
+    - un admin qui envoie un message a un etudiant
+    - un admin qui consulte la base de données
+
+-- 
+>>>>>>> 46e6f35905842048c019eb2acba698937b683b6d

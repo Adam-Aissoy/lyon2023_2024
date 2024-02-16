@@ -1,0 +1,46 @@
+ 
+1. Test de perception
+* Ecran choisi : Page de réservation avec choix durée et une date limite
+* Hypothèse : Les utilisateurs comprennent-ils bien comment réserver un livre ?
+* Questionnaire : 
+    * Question 1 : Affichez l'écran de réservation avec choix durée et une date limite. 
+    * Question 2 : Quelle est votre impression générale sur cet écran ?
+    * Question 3 : Avez-vous compris comment réserver un livre ?
+    * Question 4 : Quelle est la durée maximale de réservation d'un livre ?
+* Diffusion du questionnaire : 3 à 5 de vos collègues de la salle de TP
+* Analyse des résultats : 
+    * Les utilisateurs ont-ils compris comment réserver un livre ?
+    * Quelle est la durée maximale de réservation d'un livre ?
+2. Test A/B
+* Ecran choisi : Page de réservation avec choix durée et une date limite
+* Hypothèse : Les utilisateurs préfèrent-ils une date limite fixe ou une durée maximale de réservation ?
+* Diffusion du test A/B : 3 à 5 de vos collègues de la salle de TP
+* Analyse des résultats : 
+    * Quelle est le temps moyen que passent vos utilisateurs sur l'écran testé dans les 2 versions testées ?
+3. Test utilisateur classique
+* Scénario d'usage du test : Un utilisateur veut réserver un livre pour une durée de 15 jours.
+* Grille d'évaluation : 
+    * L'utilisateur a-t-il réussi à réserver un livre ?
+    * L'utilisateur a-t-il compris comment réserver un livre ?
+    * L'utilisateur a-t-il trouvé la durée maximale de réservation d'un livre ?
+* Interprétation des résultats : 
+    * Les utilisateurs ont-ils réussi à réserver un livre ?
+    * Les utilisateurs ont-ils compris comment réserver un livre ?
+    * Les utilisateurs ont-ils trouvé la durée maximale de réservation d'un livre ?
+**********************
+
+
+Il semble que vous soyez en train de préparer votre questionnaire pour le test de perception. Voici un exemple de comment vous pourriez le structurer :
+
+**Objectif :** Évaluer l'efficacité et l'intuitivité de l'écran de recherche de l'application LibroFinder.
+
+**Hypothèse précise étudiée :** Les utilisateurs peuvent facilement comprendre et utiliser l'écran de recherche pour trouver les livres qu'ils cherchent.
+
+**Questions posées :**
+1. Avez-vous trouvé l'écran de recherche facile à comprendre ?
+2. Avez-vous pu trouver facilement l'option de recherche avancée ?
+3. Les résultats de la recherche étaient-ils pertinents par rapport à ce que vous cherchiez ?
+4. Quels éléments de l'écran de recherche avez-vous trouvé les plus utiles ?
+5. Quels éléments de l'écran de recherche pensez-vous qu'il faudrait améliorer ?
+
+N'oubliez pas, ce ne sont que des suggestions. Vous pouvez modifier ces questions en fonction de vos besoins spécifiques. Bonne chance avec votre test de perception ! 😊
