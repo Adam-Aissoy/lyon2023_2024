@@ -1,0 +1,142 @@
+          TD3 : Processus,sigaux et pipes 
+Exercice 1 : Gestionnaire de signaux
+On vous demande d’écrire un pseudo-algorithme dans lequel le processus principal exécute de façons répétée l’une des
+deux procédures de travail, appelées faire_des_trucs() ou faire_des_choses() : ces deux procédures se terminent for-
+cément en un temps fini. Initialement, le processus principal exécute de façon répétée faire_des_trucs(), mais lorsqu’il
+reçoit le signal SIGUSR1, il attend que la procédure en cours d’exécution se termine, puis passe à l’autre. De plus, quand le
+processus principal reçoit le signal SIGINT, il attend que la procédure en cours se termine, puis il se termine lui-même.
+Vous devez mettre en place des gestionnaires pour les signaux SIGUSR1 et SIGINT pour réaliser le comportement dé-
+crit ci-dessus. On rappelle qu’idéalement un gestionnaire de signal ne comporte pas de primitives systèmes, n’effectue pas
+d’entrées-sorties, et se termine le plus vite possible. Écrivez un pseudo-code pour votre programme.
+1) Mettez en place un mécanisme pour gérer l’alternance entre les procédures faire_des_trucs() et faire_des_choses()
+lorsque le processus reçoit le signal SIGUSR1. Vous pouvez utiliser des variables et spécifier une procédure comme ges-
+tionnaire du signal SIGUSR1.
+2) Faites la même chose pour gérer la terminaison du programme lorsque le signal SIGINT est reçu.
+/* 3 et 4 ajouter par Adam Aysoy   */
+3) Écrivez un programme en C++ qui implémente le pseudo-code que vous avez écrit. Vous pouvez utiliser la fonction
+sleep() pour simuler les procédures faire_des_trucs() et faire_des_choses(). Vous pouvez aussi utiliser la fonction
+kill() pour envoyer des signaux à votre processus.
+4) Testez votre programme en utilisant la commande kill pour envoyer les signaux SIGUSR1 et SIGINT à votre processus.
+Solution : 
+1) pseudo-code : 
+while (1) {
+    faire_des_trucs();
+    while (1) {
+        faire_des_choses();
+    }
+}
+2) pseudo-code :
+void handler_SIGUSR1() {
+    if (proc == 1) {
+        proc = 2;
+    } else {
+        proc = 1;
+    }
+}
+void handler_SIGINT() {
+    exit(0);
+}
+3) Code en C++ :
+#include <iostream>
+#include <csignal>
+#include <unistd.h>
+using namespace std;
+int proc = 1;
+void faire_des_trucs() {
+    cout << "faire des trucs" << endl;
+    sleep(1);
+}
+void faire_des_choses() {
+    cout << "faire des choses" << endl;
+    sleep(1);
+}
+void handler_SIGUSR1(int sig) {
+    if (proc == 1) {
+        proc = 2;
+    } else {
+        proc = 1;
+    }
+}
+void handler_SIGINT(int sig) {
+    exit(0);
+}
+int main() {
+    signal(SIGUSR1, handler_SIGUSR1);
+    signal(SIGINT, handler_SIGINT);
+    while (1) {
+        if (proc == 1) {
+            faire_des_trucs();
+        } else {
+            faire_des_choses();
+        }
+    }
+    return 0;
+}
+4) Testez votre programme en utilisant la commande kill pour envoyer les signaux SIGUSR1 et SIGINT à votre processus.
+$ g++ -o main main.cpp
+$ ./main
+faire des trucs
+faire des choses
+// End Exerecice 1 
+
+Solution du prof : 
+1 - soit f une variable d'etat booleenne 
+/* Telephone 20/02/2024*/
+
+Exercice 3 : Blocages impliquant des pipes 
+
+int main(void) {
+    int ret, p[2]; // p[0] lecture, p[1] écriture
+    pipe(p);
+    
+    ret = fork();
+    if(ret > 0) { // processus père, écrivain
+        close(p[0]);
+        for(char c = ’a’; c <= ’z’; c++) {
+            cout << "(père) j’écris " << c << endl;
+            write(p[1], &c, 1);
+        }
+        close(p[1]);
+        waitpid(ret, NULL, 0);
+    }
+    else { // processus fils, lecteur
+        char c;
+        int i = 0;
+        close(p[1]);
+        while(read(p[0], &c, 1) == 1)
+            cout << "(fils) je lis " << c << endl;
+        close(p[0]);
+    }
+    return 0;
+}
+
+Avec l’inclusion des bons fichiers d’en-têtes, ce programme peut être compilé sans problème : commencez par résumer
+le comportement que l’on va observer à l’exécution.
+Dans chacune des questions suivantes, on commente une ou plusieurs lignes du programme. Mais on suppose les ques-
+tions sont indépendantes, et que seule la partie indiquée à la question considérée est commentée.
+1) Si on commente le close(p[1]) de la ligne 12, le programme ne se termine jamais : pourquoi ?
+2) Si on commente le close(p[1]) de la ligne 18, le programme ne se termine jamais : pourquoi ?
+3) Que se passe-t-il à l’exécution si on commente le close(p[0]) de la ligne 7, ou close(p[0]) de la ligne 21 ?
+4) Que se passe-t-il à l’exécution si on commente tout le code du fils (des lignes 18 à 21) ?
+
+Solution :
+    1 - L'exécution ne se termine jamais car le processus fils est en attente de données sur le pipe, mais le processus père
+    n'écrit jamais sur le pipe, car il ne ferme pas le descripteur d'écriture du pipe.
+    2 - L'exécution ne se termine jamais car le processus fils est en attente de données sur le pipe, mais le processus père
+    n'écrit jamais sur le pipe, car il ne ferme pas le descripteur d'écriture du pipe.
+    3 - Si on commente le close(p[0]) de la ligne 7, le processus père ne se termine jamais, car il est en attente que le
+    processus fils ferme le descripteur de lecture du pipe. Si on commente le close(p[0]) de la ligne 21, le processus fils
+    ne se termine jamais, car il est en attente que le processus père ferme le descripteur d'écriture du pipe.
+    4 - Le processus père écrit sur le pipe, mais le processus fils ne lit jamais sur le pipe, car il n'ouvre pas le descripteur
+    de lecture du pipe. Le processus père se bloque à un moment donné, car le pipe est plein, et le processus fils ne lit
+    jamais sur le pipe. Le processus père ne se termine jamais, car il est en attente que le processus fils ferme le descripteur
+    de lecture du pipe.
+    solution du prof : 
+        1 - on commente le close(p[1]) //ligne 12
+        le pere ne ferme jamais son extremite e, ecriture p[1] sur le pipe. Le fils reste donc bloqué en attente de lecture sur p[0] dans le read (p[0],&c, 1 ) pendant ce temps , le parent attend la fin de son fils avec wait(NULL)(waitpid(ret,NULL,0) dans l'énoncé): cette fin n'arrivera jamais puisque le fils est bloque en attente de lecture. 
+        2 - Cette fois-ci, le fils ne ferme pas 
+        
+        
+/* Telephone 20/02/2024*/
+
+
