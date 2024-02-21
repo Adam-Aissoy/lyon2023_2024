@@ -1,0 +1,40 @@
+//         TD 7 
+Un diagramme d’états-transitions contient des états et des transitions. Parmi les états, il y a des
+états initiaux, des états finaux et des états intermédiaires. On trouve aussi des états composites,
+des états concurrents et des états historiques. Sur une transition, on doit indiquer l’évènement
+qui permet de prendre cette transition. On peut aussi indiquer un effet qu’a cette transition et
+une condition pour emprunter la transition.
+***     Exercice *****
+On considère le diagramme d’états-transitions suivant. Les évènement A, B et C représentent
+le fait d’appuyer sur le bouton du même nom.
+Question 1 : Pour chaque terme en italique dans la partie “Cours”, donnez-en un exemple dans le diagramme ci-dessus.
+On considère les suites de boutons suivants :
+1. A
+2. AAAB
+3. BAB
+4. AAABBBAAAA
+5. ABC
+6. ABCC
+7. ABCCCAA
+8. ABCCCAAB
+/* Telephone 21/02/2024  */
+    rep:
+        1.1 
+        
+** Diagramme d’une machine à laver ** 
+On considère la panneau d’options d’une machine à laver. Le but est de modéliser l’état de ce
+panneau d’options avant qu’on appuie sur Démarrer pour effectivement utiliser la machine à
+laver. Par exemple, on peut vouloir faire un lavage à 40oC, un séchage à 800 tours/minute ou
+même programmer un démarrage différé. On va ajouter les différentes fonctionnalités au fur et
+à mesure.
+Dans un premier temps, on considère juste les trois états principaux : Éteint, Lavage et Séchage.
+Le bouton Mode permet de passer d’un état à l’autre suivant le cycle Éteint → Lavage →
+Séchage → Éteint. Le bouton Démarrer permet de lancer la machine si on est dans l’état Lavage
+ou Séchage. Comme on s’intéresse ici uniquement au panneau d’options, le fait de démarrer la
+machine est l’état final du système.
+Question 3 Proposez un diagramme d’états-transitions pour ce système.
+Solution : 
+On peut modéliser le panneau d’options de la machine à laver par le diagramme d’états-transitions
+
+
+

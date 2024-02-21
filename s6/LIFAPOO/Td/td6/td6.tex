@@ -1,0 +1,62 @@
+\documentclass{article}
+
+\begin{document}
+
+\section{Un diagramme de communication}
+
+Un diagramme de communication (ou parfois, diagramme de collaboration) permet de représenter les interactions entre les objets (tout comme un diagramme de séquence), mais en représentant l'aspect temporel de façon plus concise.
+
+Diagramme de séquence : 
+\begin{verbatim}
+o1 : C1
+o2 : C2
+h()
+j = h()
+f(x,y)
+z = f(x,y)
+g()
+i = g()
+opt [i>0]
+\end{verbatim}
+
+Diagramme de communication équivalent :
+\begin{verbatim}
+o1 : C1
+1 : z = f(x,y)
+o2 : C2
+1.1 : i = g()
+[i>0] 1.2 : j = h()
+\end{verbatim}
+
+Sur le diagramme de communication, l'aspect temporel est intégralement représenté par la numérotation des appels aux méthodes, qui sont ici 1, 1.1 et 1.2.
+
+\section{Exercices}
+
+\subsection{Distributeur de boissons}
+
+On considère le diagramme de séquence suivant :
+
+\begin{verbatim}
+1 : Clavier : Lecteur carte : Monnayeur : Distributeur
+valider_paiement()
+: Machine
+enregistrer_commande(code)
+envoie_code(code_cb)
+insérer_monnaie(somme) valider_paiement()
+code_carte(code_cb)
+lire_carte(cb)
+code_boisson(code)
+alt
+[cb]
+[monnaie]
+fabriquer_boisson(code)
+réceptionner_boisson()
+\end{verbatim}
+
+\subsubsection{Question 1}
+
+Faites un diagramme de communication correspondant à ce diagramme de séquence. 
+
+\textbf{Solution :} La page web fournit la solution de l’exercice sous forme d’un diagramme de communication, qui reprend les mêmes éléments que le diagramme de séquence, mais en indiquant les numéros des appels aux méthodes sur les liens entre les objets. Par exemple, le lien entre le clavier et la machine porte le numéro 1, qui correspond à l’appel à la méthode enregistrer_commande(code). Le lien entre le lecteur de carte et la machine porte le numéro 1.1, qui correspond à l’appel à la méthode envoyer_code(code_cb). Le lien entre le monnayeur et la machine porte le numéro 1.2, qui correspond à l’appel à la méthode valider_paiement(). Le lien entre la machine et le distributeur porte le numéro 2, qui correspond à l’appel à la méthode fabriquer_boisson(code). Le lien entre le distributeur et la machine porte le numéro 3, qui correspond à l’appel à la méthode réceptionner_boisson().
+
+\end{document}
