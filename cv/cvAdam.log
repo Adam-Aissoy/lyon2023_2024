@@ -1,114 +1,141 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2023.12.8)  19 FEB 2024 21:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.6)  21 FEB 2024 12:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/adams/Documents/lyon/lyon2023_2024/cv/cvAdam.tex
-(/home/adams/Documents/lyon/lyon2023_2024/cv/cvAdam.tex
-LaTeX2e <2023-06-01>
-L3 programming layer <2023-06-05>
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+**c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex
+(c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(c:/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+(c:/texlive/2023/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count185
-\c@section=\count186
-\c@subsection=\count187
-\c@subsubsection=\count188
-\c@paragraph=\count189
-\c@subparagraph=\count190
-\c@figure=\count191
-\c@table=\count192
+\c@part=\count187
+\c@section=\count188
+\c@subsection=\count189
+\c@subsubsection=\count190
+\c@paragraph=\count191
+\c@subparagraph=\count192
+\c@figure=\count193
+\c@table=\count194
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
-) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+) (c:/texlive/2023/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
-) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+) (c:/texlive/2023/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2023/05/11 v3.89 The Babel package
-\babel@savecnt=\count193
-\U@D=\dimen141
-\l@unhyphenated=\language3
- (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
-\bbl@readstream=\read2
-\bbl@dirlevel=\count194
-
-
-/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty:4211: Package babel Error: Unknown option 'french'. Either you misspelled it
-(babel)                or the language definition file french.ldf was not found.
-
-See the babel package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.4211 \ProcessOptions*
-                       
-Valid options are, among others: shorthands=, KeepShorthandsActive,
-activeacute, activegrave, noconfigs, safe=, main=, math=
-headfoot=, strings=, config=, hyphenmap=, or a language name.
-
-Package babel Info: You haven't specified a language as a class or package
-(babel)             option. I'll load 'nil'. Reported on input line 4262.
-(/usr/share/texlive/texmf-dist/tex/generic/babel/nil.ldf
-Language: nil 2023/05/11 v3.89 Nil language
-\l@nil=\language4
-)) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2020/01/02 v5.9 Page Geometry
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks19
-) (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
-Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+) (c:/texlive/2023/texmf-dist/tex/latex/lato/lato.sty
+Package: lato 2019/06/20 Style file for Lato.
+ (c:/texlive/2023/texmf-dist/tex/latex/fontaxes/fontaxes.sty
+Package: fontaxes 2020/07/21 v1.0e Font selection axes
+LaTeX Info: Redefining \upshape on input line 29.
+LaTeX Info: Redefining \itshape on input line 31.
+LaTeX Info: Redefining \slshape on input line 33.
+LaTeX Info: Redefining \swshape on input line 35.
+LaTeX Info: Redefining \scshape on input line 37.
+LaTeX Info: Redefining \sscshape on input line 39.
+LaTeX Info: Redefining \ulcshape on input line 41.
+LaTeX Info: Redefining \textsw on input line 47.
+LaTeX Info: Redefining \textssc on input line 48.
+LaTeX Info: Redefining \textulc on input line 49.
+) (c:/texlive/2023/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+ (c:/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
-))
-\Gm@cnth=\count195
-\Gm@cntv=\count196
-\c@Gm@tempcnt=\count197
-\Gm@bindingoffset=\dimen142
-\Gm@wd@mp=\dimen143
-\Gm@odd@mp=\dimen144
-\Gm@even@mp=\dimen145
-\Gm@layoutwidth=\dimen146
-\Gm@layoutheight=\dimen147
-\Gm@layouthoffset=\dimen148
-\Gm@layoutvoffset=\dimen149
-\Gm@dimlist=\toks20
-) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
-Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip50
-\enit@outerparindent=\dimen150
-\enit@toks=\toks21
-\enit@inbox=\box51
-\enit@count@id=\count198
-\enitdp@description=\count199
-) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count266
-\l__pdf_internal_box=\box52
+)) (c:/texlive/2023/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+) (c:/texlive/2023/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+ (c:/texlive/2023/texmf-dist/tex/generic/xkeyval/xkeyval.tex (c:/texlive/2023/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks19
+\XKV@tempa@toks=\toks20
+ (c:/texlive/2023/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count195
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))) (c:/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+ (c:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+ (c:/texlive/2023/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+) (c:/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+) (c:/texlive/2023/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (c:/texlive/2023/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count196
+\Gm@cntv=\count197
+\c@Gm@tempcnt=\count198
+\Gm@bindingoffset=\dimen141
+\Gm@wd@mp=\dimen142
+\Gm@odd@mp=\dimen143
+\Gm@even@mp=\dimen144
+\Gm@layoutwidth=\dimen145
+\Gm@layoutheight=\dimen146
+\Gm@layouthoffset=\dimen147
+\Gm@layoutvoffset=\dimen148
+\Gm@dimlist=\toks21
+)
+LaTeX Font Info:    Trying to load font information for T1+lato-TLF on input line 32.
+ (c:/texlive/2023/texmf-dist/tex/latex/lato/T1lato-TLF.fd
+File: T1lato-TLF.fd 2019/06/24 Font definitions for T1/lato-TLF.
+)
+LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 32.
+ (c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count199
+\l__pdf_internal_box=\box51
 ) (./cvAdam.aux)
 \openout1 = `cvAdam.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+\c@mv@tabular=\count266
+\c@mv@boldtabular=\count267
+ (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count268
+\scratchdimen=\dimen149
+\scratchbox=\box52
+\nofMPsegments=\count269
+\nofMParguments=\count270
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count271
+\MPscratchDim=\dimen150
+\MPnumerator=\count272
+\makeMPintoPDFobject=\count273
+\everyMPtoPDFconversion=\toks23
+)
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -117,20 +144,20 @@ LaTeX Font Info:    ... okay on input line 20.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
-* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* h-part:(L,W,R)=(28.45274pt, 540.60239pt, 28.45274pt)
+* v-part:(T,H,B)=(42.67912pt, 759.6886pt, 42.67912pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=483.69687pt
-* \textheight=731.23584pt
-* \oddsidemargin=-15.36449pt
-* \evensidemargin=-15.36449pt
-* \topmargin=-52.36449pt
+* \textwidth=540.60239pt
+* \textheight=759.6886pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
+* \topmargin=-66.59087pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=65.0pt
+* \marginparwidth=57.0pt
 * \marginparsep=11.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
@@ -143,37 +170,727 @@ LaTeX Font Info:    ... okay on input line 20.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 22.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 22.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 22.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 50.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 50.
+LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
+(Font)              scaled to size 17.28pt on input line 35.
+LaTeX Font Info:    Font shape `T1/lato-TLF/b/n' will be
+(Font)              scaled to size 17.28pt on input line 35.
+LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 40.
+LaTeX Font Info:    Font shape `T1/lato-TLF/b/n' will be
+(Font)              scaled to size 12.0pt on input line 40.
+LaTeX Font Info:    Font shape `T1/lato-TLF/b/n' will be
+(Font)              scaled to size 10.0pt on input line 41.
+
+Overfull \hbox (6.60556pt too wide) in paragraph at lines 66--70
+\T1/lato-TLF/m/n/10 - Con-tri-bu-tion � la r�-so-lu-tion des prob-l�mes en ap-por-tant les so-lu-tions adap-t�es et en for-mu-lant des propo-si-tions d'am�lioration. 
+ []
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz 
+                 [baseline]\node [anchor=base,draw=body!30,rounded corners,i...
+l.72 \cvtag{Java}
+                  \cvtag{C++} \cvtag{CSharp} \cvtag{Python} \cvtag{PHP} \cvt...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz [baseline]\node 
+                                 [anchor=base,draw=body!30,rounded corners,i...
+l.72 \cvtag{Java}
+                  \cvtag{C++} \cvtag{CSharp} \cvtag{Python} \cvtag{PHP} \cvt...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz 
+                 [baseline]\node [anchor=base,draw=body!30,rounded corners,i...
+l.72 \cvtag{Java} \cvtag{C++}
+                              \cvtag{CSharp} \cvtag{Python} \cvtag{PHP} \cvt...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz [baseline]\node 
+                                 [anchor=base,draw=body!30,rounded corners,i...
+l.72 \cvtag{Java} \cvtag{C++}
+                              \cvtag{CSharp} \cvtag{Python} \cvtag{PHP} \cvt...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz 
+                 [baseline]\node [anchor=base,draw=body!30,rounded corners,i...
+l.72 \cvtag{Java} \cvtag{C++} \cvtag{CSharp}
+                                             \cvtag{Python} \cvtag{PHP} \cvt...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz [baseline]\node 
+                                 [anchor=base,draw=body!30,rounded corners,i...
+l.72 \cvtag{Java} \cvtag{C++} \cvtag{CSharp}
+                                             \cvtag{Python} \cvtag{PHP} \cvt...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz 
+                 [baseline]\node [anchor=base,draw=body!30,rounded corners,i...
+l.72 ... \cvtag{C++} \cvtag{CSharp} \cvtag{Python}
+                                                   \cvtag{PHP} \cvtag{JavaSc...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz [baseline]\node 
+                                 [anchor=base,draw=body!30,rounded corners,i...
+l.72 ... \cvtag{C++} \cvtag{CSharp} \cvtag{Python}
+                                                   \cvtag{PHP} \cvtag{JavaSc...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz 
+                 [baseline]\node [anchor=base,draw=body!30,rounded corners,i...
+l.72 ... \cvtag{CSharp} \cvtag{Python} \cvtag{PHP}
+                                                   \cvtag{JavaScript} \cvtag...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz [baseline]\node 
+                                 [anchor=base,draw=body!30,rounded corners,i...
+l.72 ... \cvtag{CSharp} \cvtag{Python} \cvtag{PHP}
+                                                   \cvtag{JavaScript} \cvtag...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz 
+                 [baseline]\node [anchor=base,draw=body!30,rounded corners,i...
+l.72 ...tag{Python} \cvtag{PHP} \cvtag{JavaScript}
+                                                   \cvtag{HTML} \cvtag{CSS} ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz [baseline]\node 
+                                 [anchor=base,draw=body!30,rounded corners,i...
+l.72 ...tag{Python} \cvtag{PHP} \cvtag{JavaScript}
+                                                   \cvtag{HTML} \cvtag{CSS} ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz 
+                 [baseline]\node [anchor=base,draw=body!30,rounded corners,i...
+l.72 ...cvtag{PHP} \cvtag{JavaScript} \cvtag{HTML}
+                                                   \cvtag{CSS} \cvtag{Ocaml}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz [baseline]\node 
+                                 [anchor=base,draw=body!30,rounded corners,i...
+l.72 ...cvtag{PHP} \cvtag{JavaScript} \cvtag{HTML}
+                                                   \cvtag{CSS} \cvtag{Ocaml}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz 
+                 [baseline]\node [anchor=base,draw=body!30,rounded corners,i...
+l.72 ...cvtag{JavaScript} \cvtag{HTML} \cvtag{CSS}
+                                                   \cvtag{Ocaml} \cvtag{Prol...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz [baseline]\node 
+                                 [anchor=base,draw=body!30,rounded corners,i...
+l.72 ...cvtag{JavaScript} \cvtag{HTML} \cvtag{CSS}
+                                                   \cvtag{Ocaml} \cvtag{Prol...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz 
+                 [baseline]\node [anchor=base,draw=body!30,rounded corners,i...
+l.72 ...pt} \cvtag{HTML} \cvtag{CSS} \cvtag{Ocaml}
+                                                   \cvtag{Prolog} \cvtag{SQL...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz [baseline]\node 
+                                 [anchor=base,draw=body!30,rounded corners,i...
+l.72 ...pt} \cvtag{HTML} \cvtag{CSS} \cvtag{Ocaml}
+                                                   \cvtag{Prolog} \cvtag{SQL...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz 
+                 [baseline]\node [anchor=base,draw=body!30,rounded corners,i...
+l.72 ...} \cvtag{CSS} \cvtag{Ocaml} \cvtag{Prolog}
+                                                   \cvtag{SQL} \cvtag{MySQL}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz [baseline]\node 
+                                 [anchor=base,draw=body!30,rounded corners,i...
+l.72 ...} \cvtag{CSS} \cvtag{Ocaml} \cvtag{Prolog}
+                                                   \cvtag{SQL} \cvtag{MySQL}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz 
+                 [baseline]\node [anchor=base,draw=body!30,rounded corners,i...
+l.72 ...} \cvtag{Ocaml} \cvtag{Prolog} \cvtag{SQL}
+                                                   \cvtag{MySQL} \cvtag{Mari...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz [baseline]\node 
+                                 [anchor=base,draw=body!30,rounded corners,i...
+l.72 ...} \cvtag{Ocaml} \cvtag{Prolog} \cvtag{SQL}
+                                                   \cvtag{MySQL} \cvtag{Mari...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz 
+                 [baseline]\node [anchor=base,draw=body!30,rounded corners,i...
+l.72 ...} \cvtag{Prolog} \cvtag{SQL} \cvtag{MySQL}
+                                                   \cvtag{MariaDB} \cvtag{La...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz [baseline]\node 
+                                 [anchor=base,draw=body!30,rounded corners,i...
+l.72 ...} \cvtag{Prolog} \cvtag{SQL} \cvtag{MySQL}
+                                                   \cvtag{MariaDB} \cvtag{La...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz 
+                 [baseline]\node [anchor=base,draw=body!30,rounded corners,i...
+l.72 ... \cvtag{SQL} \cvtag{MySQL} \cvtag{MariaDB}
+                                                   \cvtag{Lambda calcul} \cv...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz [baseline]\node 
+                                 [anchor=base,draw=body!30,rounded corners,i...
+l.72 ... \cvtag{SQL} \cvtag{MySQL} \cvtag{MariaDB}
+                                                   \cvtag{Lambda calcul} \cv...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz 
+                 [baseline]\node [anchor=base,draw=body!30,rounded corners,i...
+l.72 ...SQL} \cvtag{MariaDB} \cvtag{Lambda calcul}
+                                                   \cvtag{SDL2} \cvtag{R, Rs...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz [baseline]\node 
+                                 [anchor=base,draw=body!30,rounded corners,i...
+l.72 ...SQL} \cvtag{MariaDB} \cvtag{Lambda calcul}
+                                                   \cvtag{SDL2} \cvtag{R, Rs...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz 
+                 [baseline]\node [anchor=base,draw=body!30,rounded corners,i...
+l.72 ...ariaDB} \cvtag{Lambda calcul} \cvtag{SDL2}
+                                                   \cvtag{R, Rstudio} \cvtag...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz [baseline]\node 
+                                 [anchor=base,draw=body!30,rounded corners,i...
+l.72 ...ariaDB} \cvtag{Lambda calcul} \cvtag{SDL2}
+                                                   \cvtag{R, Rstudio} \cvtag...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz 
+                 [baseline]\node [anchor=base,draw=body!30,rounded corners,i...
+l.72 ...da calcul} \cvtag{SDL2} \cvtag{R, Rstudio}
+                                                   \cvtag{LaTeX}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz [baseline]\node 
+                                 [anchor=base,draw=body!30,rounded corners,i...
+l.72 ...da calcul} \cvtag{SDL2} \cvtag{R, Rstudio}
+                                                   \cvtag{LaTeX}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz 
+                 [baseline]\node [anchor=base,draw=body!30,rounded corners,i...
+l.72 ...tag{SDL2} \cvtag{R, Rstudio} \cvtag{LaTeX}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:72: Undefined control sequence.
+\cvtag #1->\tikz [baseline]\node 
+                                 [anchor=base,draw=body!30,rounded corners,i...
+l.72 ...tag{SDL2} \cvtag{R, Rstudio} \cvtag{LaTeX}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (14.70154pt too wide) in paragraph at lines 71--73
+\T1/lato-TLF/m/n/10 [base-line][anchor=base,draw=body!30,rounded cor-ners,inner xsep=3pt,inner ysep=1pt,text height=1.5ex,text depth=.25ex]Java;
+ []
+
+
+Overfull \hbox (14.07158pt too wide) in paragraph at lines 71--73
+\T1/lato-TLF/m/n/10 [base-line][anchor=base,draw=body!30,rounded cor-ners,inner xsep=3pt,inner ysep=1pt,text height=1.5ex,text depth=.25ex]C++;
+ []
+
+
+Overfull \hbox (27.60655pt too wide) in paragraph at lines 71--73
+\T1/lato-TLF/m/n/10 [base-line][anchor=base,draw=body!30,rounded cor-ners,inner xsep=3pt,inner ysep=1pt,text height=1.5ex,text depth=.25ex]CSharp;
+ []
+
+
+Overfull \hbox (27.36656pt too wide) in paragraph at lines 71--73
+\T1/lato-TLF/m/n/10 [base-line][anchor=base,draw=body!30,rounded cor-ners,inner xsep=3pt,inner ysep=1pt,text height=1.5ex,text depth=.25ex]Python;
+ []
+
+
+Overfull \hbox (15.43658pt too wide) in paragraph at lines 71--73
+\T1/lato-TLF/m/n/10 [base-line][anchor=base,draw=body!30,rounded cor-ners,inner xsep=3pt,inner ysep=1pt,text height=1.5ex,text depth=.25ex]PHP;
+ []
+
+
+Overfull \hbox (39.94647pt too wide) in paragraph at lines 71--73
+\T1/lato-TLF/m/n/10 [base-line][anchor=base,draw=body!30,rounded cor-ners,inner xsep=3pt,inner ysep=1pt,text height=1.5ex,text depth=.25ex]JavaScript;
+ []
+
+
+Overfull \hbox (23.75159pt too wide) in paragraph at lines 71--73
+\T1/lato-TLF/m/n/10 [base-line][anchor=base,draw=body!30,rounded cor-ners,inner xsep=3pt,inner ysep=1pt,text height=1.5ex,text depth=.25ex]HTML;
+ []
+
+
+Overfull \hbox (13.32158pt too wide) in paragraph at lines 71--73
+\T1/lato-TLF/m/n/10 [base-line][anchor=base,draw=body!30,rounded cor-ners,inner xsep=3pt,inner ysep=1pt,text height=1.5ex,text depth=.25ex]CSS;
+ []
+
+
+Overfull \hbox (24.06157pt too wide) in paragraph at lines 71--73
+\T1/lato-TLF/m/n/10 [base-line][anchor=base,draw=body!30,rounded cor-ners,inner xsep=3pt,inner ysep=1pt,text height=1.5ex,text depth=.25ex]Ocaml;
+ []
+
+
+Overfull \hbox (24.01158pt too wide) in paragraph at lines 71--73
+\T1/lato-TLF/m/n/10 [base-line][anchor=base,draw=body!30,rounded cor-ners,inner xsep=3pt,inner ysep=1pt,text height=1.5ex,text depth=.25ex]Prolog;
+ []
+
+
+Overfull \hbox (14.35658pt too wide) in paragraph at lines 71--73
+\T1/lato-TLF/m/n/10 [base-line][anchor=base,draw=body!30,rounded cor-ners,inner xsep=3pt,inner ysep=1pt,text height=1.5ex,text depth=.25ex]SQL;
+ []
+
+
+Overfull \hbox (28.63156pt too wide) in paragraph at lines 71--73
+\T1/lato-TLF/m/n/10 [base-line][anchor=base,draw=body!30,rounded cor-ners,inner xsep=3pt,inner ysep=1pt,text height=1.5ex,text depth=.25ex]MySQL;
+ []
+
+
+Overfull \hbox (34.87654pt too wide) in paragraph at lines 71--73
+\T1/lato-TLF/m/n/10 [base-line][anchor=base,draw=body!30,rounded cor-ners,inner xsep=3pt,inner ysep=1pt,text height=1.5ex,text depth=.25ex]MariaDB;
+ []
+
+
+Overfull \hbox (27.67656pt too wide) in paragraph at lines 71--73
+\T1/lato-TLF/m/n/10 [base-line][anchor=base,draw=body!30,rounded cor-ners,inner xsep=3pt,inner ysep=1pt,text height=1.5ex,text depth=.25ex]Lambda
+ []
+
+
+Overfull \hbox (51.16917pt too wide) in paragraph at lines 71--73
+\T1/lato-TLF/m/n/10 cal-cul;  [base-line][anchor=base,draw=body!30,rounded cor-ners,inner xsep=3pt,inner ysep=1pt,text height=1.5ex,text depth=.25ex]SDL2;
+ []
+
+
+Overfull \hbox (1.71161pt too wide) in paragraph at lines 71--73
+\T1/lato-TLF/m/n/10 [base-line][anchor=base,draw=body!30,rounded cor-ners,inner xsep=3pt,inner ysep=1pt,text height=1.5ex,text depth=.25ex]R,
+ []
+
+
+Overfull \hbox (60.88913pt too wide) in paragraph at lines 71--73
+\T1/lato-TLF/m/n/10 Rstu-dio;  [base-line][anchor=base,draw=body!30,rounded cor-ners,inner xsep=3pt,inner ysep=1pt,text height=1.5ex,text depth=.25ex]LaTeX;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--73
+
+ []
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:74: Undefined control sequence.
+\cvtag #1->\tikz 
+                 [baseline]\node [anchor=base,draw=body!30,rounded corners,i...
+l.74 \cvtag{GitLab,GitHub}
+                           \cvtag{Premiers secours} \cvtag{Conseil clientèl...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:74: Undefined control sequence.
+\cvtag #1->\tikz [baseline]\node 
+                                 [anchor=base,draw=body!30,rounded corners,i...
+l.74 \cvtag{GitLab,GitHub}
+                           \cvtag{Premiers secours} \cvtag{Conseil clientèl...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:74: Undefined control sequence.
+\cvtag #1->\tikz 
+                 [baseline]\node [anchor=base,draw=body!30,rounded corners,i...
+l.74 ...ag{GitLab,GitHub} \cvtag{Premiers secours}
+                                                   \cvtag{Conseil clientèle...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:74: Undefined control sequence.
+\cvtag #1->\tikz [baseline]\node 
+                                 [anchor=base,draw=body!30,rounded corners,i...
+l.74 ...ag{GitLab,GitHub} \cvtag{Premiers secours}
+                                                   \cvtag{Conseil clientèle...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:74: Undefined control sequence.
+\cvtag #1->\tikz 
+                 [baseline]\node [anchor=base,draw=body!30,rounded corners,i...
+l.74 ...emiers secours} \cvtag{Conseil clientèle}
+                                                   \cvtag{Comptabilité} \cv...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:74: Undefined control sequence.
+\cvtag #1->\tikz [baseline]\node 
+                                 [anchor=base,draw=body!30,rounded corners,i...
+l.74 ...emiers secours} \cvtag{Conseil clientèle}
+                                                   \cvtag{Comptabilité} \cv...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:74: Undefined control sequence.
+\cvtag #1->\tikz 
+                 [baseline]\node [anchor=base,draw=body!30,rounded corners,i...
+l.74 ...{Conseil clientèle} \cvtag{Comptabilité}
+                                                   \cvtag{Gestion des stocks}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:74: Undefined control sequence.
+\cvtag #1->\tikz [baseline]\node 
+                                 [anchor=base,draw=body!30,rounded corners,i...
+l.74 ...{Conseil clientèle} \cvtag{Comptabilité}
+                                                   \cvtag{Gestion des stocks}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:74: Undefined control sequence.
+\cvtag #1->\tikz 
+                 [baseline]\node [anchor=base,draw=body!30,rounded corners,i...
+l.74 ...{Comptabilité} \cvtag{Gestion des stocks}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:74: Undefined control sequence.
+\cvtag #1->\tikz [baseline]\node 
+                                 [anchor=base,draw=body!30,rounded corners,i...
+l.74 ...{Comptabilité} \cvtag{Gestion des stocks}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (73.73148pt too wide) in paragraph at lines 74--75
+[]\T1/lato-TLF/m/n/10 [baseline][anchor=base,draw=body!30,rounded cor-ners,inner xsep=3pt,inner ysep=1pt,text height=1.5ex,text depth=.25ex]GitLab,GitHub;
+ []
+
+
+Overfull \hbox (31.64656pt too wide) in paragraph at lines 74--75
+\T1/lato-TLF/m/n/10 [base-line][anchor=base,draw=body!30,rounded cor-ners,inner xsep=3pt,inner ysep=1pt,text height=1.5ex,text depth=.25ex]Premiers
+ []
+
+
+Overfull \hbox (65.45413pt too wide) in paragraph at lines 74--75
+\T1/lato-TLF/m/n/10 sec-ours;  [base-line][anchor=base,draw=body!30,rounded cor-ners,inner xsep=3pt,inner ysep=1pt,text height=1.5ex,text depth=.25ex]Conseil
+ []
+
+
+Overfull \hbox (95.36409pt too wide) in paragraph at lines 74--75
+\T1/lato-TLF/m/n/10 clien-t�le;  [base-line][anchor=base,draw=body!30,rounded cor-ners,inner xsep=3pt,inner ysep=1pt,text height=1.5ex,text depth=.25ex]Comptabilit�;
+ []
+
+
+Overfull \hbox (27.26657pt too wide) in paragraph at lines 74--75
+\T1/lato-TLF/m/n/10 [base-line][anchor=base,draw=body!30,rounded cor-ners,inner xsep=3pt,inner ysep=1pt,text height=1.5ex,text depth=.25ex]Gestion
+ []
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:80: Undefined control sequence.
+\cvtag #1->\tikz 
+                 [baseline]\node [anchor=base,draw=body!30,rounded corners,i...
+l.80 \cvtag{Lecture}
+                     \cvtag{Football} \cvtag{Voyage}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:80: Undefined control sequence.
+\cvtag #1->\tikz [baseline]\node 
+                                 [anchor=base,draw=body!30,rounded corners,i...
+l.80 \cvtag{Lecture}
+                     \cvtag{Football} \cvtag{Voyage}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:80: Undefined control sequence.
+\cvtag #1->\tikz 
+                 [baseline]\node [anchor=base,draw=body!30,rounded corners,i...
+l.80 \cvtag{Lecture} \cvtag{Football}
+                                      \cvtag{Voyage}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:80: Undefined control sequence.
+\cvtag #1->\tikz [baseline]\node 
+                                 [anchor=base,draw=body!30,rounded corners,i...
+l.80 \cvtag{Lecture} \cvtag{Football}
+                                      \cvtag{Voyage}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:80: Undefined control sequence.
+\cvtag #1->\tikz 
+                 [baseline]\node [anchor=base,draw=body!30,rounded corners,i...
+l.80 ...g{Lecture} \cvtag{Football} \cvtag{Voyage}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/cv/cvAdam.tex:80: Undefined control sequence.
+\cvtag #1->\tikz [baseline]\node 
+                                 [anchor=base,draw=body!30,rounded corners,i...
+l.80 ...g{Lecture} \cvtag{Football} \cvtag{Voyage}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (28.49158pt too wide) in paragraph at lines 79--81
+\T1/lato-TLF/m/n/10 [base-line][anchor=base,draw=body!30,rounded cor-ners,inner xsep=3pt,inner ysep=1pt,text height=1.5ex,text depth=.25ex]Lecture;
+ []
+
+
+Overfull \hbox (31.13655pt too wide) in paragraph at lines 79--81
+\T1/lato-TLF/m/n/10 [base-line][anchor=base,draw=body!30,rounded cor-ners,inner xsep=3pt,inner ysep=1pt,text height=1.5ex,text depth=.25ex]Football;
+ []
+
+
+Overfull \hbox (27.74655pt too wide) in paragraph at lines 79--81
+\T1/lato-TLF/m/n/10 [base-line][anchor=base,draw=body!30,rounded cor-ners,inner xsep=3pt,inner ysep=1pt,text height=1.5ex,text depth=.25ex]Voyage;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--81
+
+ []
+
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./cvAdam.aux)
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/lato/a_cl4kdn.enc}] [2] (./cvAdam.aux)
  ***********
-LaTeX2e <2023-06-01>
-L3 programming layer <2023-06-05>
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2634 strings out of 477695
- 43704 string characters out of 5831648
- 1858759 words of memory out of 5000000
- 23156 multiletter control sequences out of 15000+600000
- 521505 words of font info for 50 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 57i,6n,65p,287b,237s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </home/adams/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0700.600pk> </home/adams/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </home/adams/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/adams/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/adams/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/adams/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk>
-Output written on cvAdam.pdf (2 pages, 53066 bytes).
+ 2770 strings out of 474222
+ 43559 string characters out of 5750210
+ 1936978 words of memory out of 5000000
+ 25029 multiletter control sequences out of 15000+600000
+ 691516 words of font info for 47 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 57i,5n,65p,307b,176s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/typoland/lato/Lato-Bold.pfb><c:/texlive/2023/texmf-dist/fonts/type1/typoland/lato/Lato-Regular.pfb>
+Output written on cvAdam.pdf (2 pages, 64297 bytes).
 PDF statistics:
- 204 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
+ 22 PDF objects out of 1000 (max. 8388607)
+ 13 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
