@@ -1,0 +1,94 @@
+First Cm
+-> les langages objets sont des polymorphisme. Que ce qu'une classe, spécialisation d'une classe. Cast done, done casting . 
+-> exemple de vehicule et les heritages. 
+Pour la declaration il faut toujours declarer sur le plus haut d'une classe. 
+Exemple de classe : vehicule ->(ses fils {vehicule motoriser ; vehicule non motoriser});
+
+this ();
+- constructeur de l'attribut courant 
+il faut savoir certaines choses sur les constructeurs; 
+
+
+/*  21/02/2024   */
+Les Threads en java 
+- Un thread est un processus léger qui s'exécute en parallèle avec d'autres threads.
+- Un thread est un objet de la classe Thread ou de la classe qui implémente l'interface Runnable
+* Exemple dans le main (): 
+Thread t = new Thread (new Runnable () {
+    public void run () {
+        // code à exécuter dans le thread
+    }
+});
+t.start(); // démarre le thread
+t.join(); // attend la fin du thread
+- Les threads sont utilisés pour exécuter des tâches en parallèle, par exemple pour ne pas bloquer l'interface graphique d'une application pendant un traitement long.
+- Les threads peuvent communiquer entre eux en utilisant des méthodes synchronisées ou des objets de la classe Lock.
+- Les threads peuvent être interrompus en appelant la méthode interrupt().
+- Les threads peuvent être mis en attente en appelant la méthode wait() sur un objet, et réveillés en appelant la méthode notify() ou notifyAll() sur le même objet.
+- Les threads peuvent être mis en attente pendant un certain temps en appelant la méthode sleep().
+- Les threads peuvent être mis en attente en attendant la fin d'un autre thread en appelant la méthode join() sur ce thread.
+- Les threads peuvent être mis en attente en attendant la fin d'une tâche asynchrone en appelant la méthode get() sur un objet de la classe Future.
+    * Exemple : 
+    ExecutorService executor = Executors.newSingleThreadExecutor();
+    Future<String> future = executor.submit(new Callable<String>() {
+        public String call() {
+            return "hello";
+        }
+    });
+    String result = future.get(); // attend la fin de la tâche asynchrone
+    executor.shutdown();
+
+- Les threads peuvent être mis en attente en attendant la fin d'une tâche asynchrone en utilisant des objets de la classe CompletableFuture.
+- Les threads peuvent être mis en attente en attendant la fin d'une tâche asynchrone en utilisant des objets de la classe CompletionStage.
+- Les threads peuvent être mis en attente en attendant la fin d'une tâche asynchrone en utilisant des objets de la classe CountDownLatch.
+- Les threads peuvent être mis en attente en attendant la fin d'une tâche asynchrone en utilisant des objets de la classe CyclicBarrier.
+- Les threads peuvent être mis en attente en attendant la fin d'une tâche asynchrone en utilisant des objets de la classe Phaser.
+- Les threads peuvent être mis en attente en attendant la fin d'une tâche asynchrone en utilisant des objets de la classe Semaphore.
+- Les threads peuvent être mis en attente en attendant la fin d'une tâche asynchrone en utilisant des objets de la classe Exchanger.
+- Les threads peuvent être mis en attente en attendant la fin d'une tâche asynchrone en utilisant des objets de la classe ForkJoinPool.
+- Les threads peuvent être mis en attente en attendant la fin d'une tâche asynchrone en utilisant des objets de la classe ExecutorService.
+- Les threads peuvent être mis en attente en attendant la fin d'une tâche asynchrone en utilisant des objets de la classe ScheduledExecutorService.
+- Les threads peuvent être mis en attente en attendant la fin d'une tâche asynchrone en utilisant des objets de la classe ExecutorCompletionService.
+
+// Exemple du prof : 
+    Thread t = new Thread(){
+        public void run() {
+            afficher("hello");
+        }
+    }
+    t.start();
+    t.join();
+    afficher("world");
+**** Exercie *** 
+Proposez une implementation de l'application suivant : 
+    Soit une pâtisserie proposant des gâteux. Chaque client qui se presente achete 1 à 5 gâteauc. La serveuse met 20 secondes ( 10 seconds sont simulées 1 seconde ) pour servir chaque gâteau.
+    * Identifier les classes à developper.
+    * quelles classes doivent avoir leur propre Thread?
+    * Y a t'il une section critique à proteger ? Pourquoi ? 
+    * Proposez une implementation.
+Solution :
+    ****   prof  ******  
+    * main:
+    Serveur s = new Serveur ( );
+    Client [] tab = new Client [s];
+    for (int i = 0; i <5; i++) {
+        tab[i] = new Client (s);
+
+    }
+    for(Client c : tab){
+        c.start();
+    }
+// Autre note de Adam Aysoy 
+// definition of main class
+    public class Serveur {
+        private int nbGateau = 10;
+        public synchronized void servir (int n) {
+            if (nbGateau >= n) {
+                nbGateau -= n;
+                System.out.println("serveur " + n + " gateau");
+            } else {
+                System.out.println("plus de gateau");
+            }
+        }
+    }
+// 
