@@ -5,3 +5,9 @@
             * plusieurs puces <<processeur >> dans un ordinateur
             * chaque processeur a son propre jeu de registres et de mémoire cache
     Parallelisme :
+
+    /*
+    Autre note broullion 
+    impot Ali : 3065502652366
+    
+    */
