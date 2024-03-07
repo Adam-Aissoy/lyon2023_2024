@@ -57,3 +57,8 @@ suppression(X,[Y,FG,FD],[Y,FG1,FD]):-
     X<Y, suppression(X,FG,FG1).
 suppression(X,[Y,FG,FD],[Y,FG,FD1]):-
     X>Y, suppression(X,FD,FD1).
+/* 
+fonction somme Adam Aysoy test 
+ */
+somme([],0):-!.
+somme([X|Queue],Res):- somme(Queue,Res1),Res is X+Res1.
