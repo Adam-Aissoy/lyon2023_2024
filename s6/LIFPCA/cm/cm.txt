@@ -6,8 +6,8 @@
             * chaque processeur a son propre jeu de registres et de mémoire cache
     Parallelisme :
 
-    /*
-    Autre note broullion 
-    impot Ali : 3065502652366
-    
-    */
+  // Cours  : Ordonnancement 
+    -- Ordonnancement :
+        * Ordonnancement des processus
+        * Ordonnancement des threads
+        * Ordonnancement des tâches
