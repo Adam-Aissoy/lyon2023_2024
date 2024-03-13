@@ -1,3 +1,5 @@
+#include "Coup.java";
+
 public class Plateau {
     public int longueur, largeur;
     public int  [][] etatIdPlateau;
@@ -13,7 +15,10 @@ public class Plateau {
             }
         }
     }
-    public appliquerCoup(coup)
+    public appliquerCoup(Coup coup , int id ){
+        etatIdPlateau[coup.x][coup.y] = id;
+
+    }
     public void afficher() {
         for (int i = 0; i < longueur; i++) {
             for (int j = 0; j < largeur; j++) {
