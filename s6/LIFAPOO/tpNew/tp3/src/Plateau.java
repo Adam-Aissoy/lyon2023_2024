@@ -1,4 +1,4 @@
-#include "Coup.java";
+#include <Coup>
 
 public class Plateau {
     public int longueur, largeur;
@@ -8,14 +8,14 @@ public class Plateau {
         this.largeur = largeur;
         this.etatIdPlateau = new int[longueur][largeur];
     }
-    public initialiser (){
+    public void initialiser (){
         for (int i = 0; i < longueur; i++) {
             for (int j = 0; j < largeur; j++) {
                 etatIdPlateau[i][j] = 0;
             }
         }
     }
-    public appliquerCoup(Coup coup , int id ){
+    public void appliquerCoup(Coup coup , int id ){
         etatIdPlateau[coup.x][coup.y] = id;
 
     }
