@@ -1,0 +1,141 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{color,pxfonts,fix-cm}
+\usepackage{latexsym}
+\usepackage[mathletters]{ucs}
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage{pict2e}
+\usepackage{wasysym}
+\usepackage[english]{babel}
+\usepackage{tikz}
+\pagestyle{empty}
+\usepackage[margin=0in,paperwidth=595pt,paperheight=842pt]{geometry}
+\begin{document}
+\definecolor{color_29791}{rgb}{0,0,0}
+\begin{tikzpicture}[overlay]\path(0pt,0pt);\end{tikzpicture}
+\begin{picture}(-5,0)(2.5,0)
+\put(75,-69.92999){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-69.84003){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}Année universitaire 2023-2024}
+\put(75,-79.92999){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-79.84003){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}Département Informatique Niveau L3}
+\put(75,-89.92999){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-89.84003){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}Matière LIFDATA}
+\put(75,-99.92999){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-99.84003){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}Enseignant Khalid Benabdeslem}
+\put(75,-109.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-109.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}Intitulé TD/TP : Analyse de données (ACP) avec Python}
+\put(75,-119.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-119.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}Contenu • Réduction de dimensions (ACP)}
+\put(75,-129.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-129.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}• Visualisation}
+\put(75,-139.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-139.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}Remarque}
+\put(75,-149.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-149.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}Ce TP est à rendre sur Moodle. Il faudra rendre le notebook jupyter commenté. Ne pas oublier de}
+\put(75,-159.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-159.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}mentionner vos noms et prénoms dans le nom du fichier qui sera sous la forme :}
+\put(75,-169.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-169.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}TP\_ACP\_A\_rendre\_Noms\_Prenoms.ipynb.}
+\put(75,-179.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-179.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}Préambule}
+\put(75,-189.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-189.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}Sur le plan des packages Python, vous allez utiliser la librairie Scikit-learn. Cette libraire montre dans }
+\put(75,-199.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}cette}
+\put(75,-209.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-209.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}situation tout son intérêt. La plupart des techniques récentes d’apprentissage sont en effet }
+\put(75,-219.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}expérimentées avec}
+\put(75,-229.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-229.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}Scikit-learn et le plus souvent mises à disposition de la communauté scientifique.}
+\put(75,-239.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-239.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}La librairie Scikit-learn vous pouvez aller sur le site suivant : http://scikit-learn.org}
+\put(75,-249.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-249.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}Questions}
+\put(75,-259.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-259.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}Créer un nouveau notebook Python et taper le code suivant dans une nouvelle cellule :}
+\put(75,-269.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-269.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}import numpy as np}
+\put(75,-279.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-279.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}np.set\_printoptions(threshold=10000,suppress=True)}
+\put(75,-289.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-289.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}import pandas as pd}
+\put(75,-299.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-299.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}import warnings}
+\put(75,-309.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-309.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}import matplotlib.pyplot as plt}
+\put(75,-319.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-319.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}warnings.filterwarnings('ignore')}
+\put(75,-329.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-329.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}Le fichier "villes.csv" comporte 32 villes françaises décrites par les températures moyennes dans les 12}
+\put(75,-339.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}mois de}
+\put(75,-349.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-349.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}l’année. L’objectif dans cette partie est de représenter graphiquement le plus d’informations possibles }
+\put(75,-359.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}contenues}
+\put(75,-369.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-369.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}dans ce fichier de données et de déceler une éventuelle segmentation topologique des villes.}
+\put(75,-379.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-379.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}1. Importer ce jeu de données avec la librairie pandas (c.f. read\_csv)}
+\put(75,-389.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-389.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}data = pd.read\_csv('./villes.csv', sep=';')}
+\put(75,-399.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-399.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}X = data.iloc[:, 1:13].values}
+\put(75,-409.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-409.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}labels = data.iloc[:, 0].values}
+\put(75,-419.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-419.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}2. Réaliser une Analyse en Composantes Principales (module PCA de Scikit-learn) sur ce jeu de }
+\put(75,-429.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}données}
+\put(75,-439.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-439.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}centrées réduites (StandardScaler)}
+\put(75,-449.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-449.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}a) Quel est le nombre d’axes à retenir pour conserver un minimum de 90\% de l’information}
+\put(75,-459.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-459.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}représentée dans le nuage initial.}
+\put(75,-469.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-469.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}b) Donner une interprétation des deux premiers axes principaux.}
+\put(75,-479.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-479.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}c) En suivant le code ci-dessous, donner une visualisation graphique des villes projetées dans le plan}
+\put(75,-489.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-489.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}principal.}
+\put(75,-499.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-499.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}X\_pca étant la matrice des données transformées par l’ACP, labels étant le vecteur contenant le nom}
+\put(75,-509.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-509.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}des instances (ici les villes).}
+\put(75,-519.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-519.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}import matplotlib}
+\put(75,-529.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-529.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}plt.scatter(X\_pca[:, 0], X\_pca[:, 1])}
+\put(75,-539.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-539.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}for l, x, y in zip(labels, X\_pca[:, 0], X\_pca[:, 1]):}
+\put(75,-549.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-549.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}plt.annotate(l, xy=(x, y), xytext=(-0.2, 0.2), textcoords='offset points')}
+\put(75,-559.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-559.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}plt.show()}
+\put(75,-569.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-569.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}d) Essayer d’analyser les positions et oppositions des villes sur le plan projeté. Avec les éléments que}
+\put(75,-579.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-579.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}vous avez, identifiez visuellement une typologie des états.}
+\put(75,-589.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-589.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}e) Définir une fonction permettant de regrouper toutes les procédures précédentes.}
+\put(75,-599.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-599.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}3. Appliquer la fonction précédente sur le jeu de données "crimes.csv". Il s’agit des statistiques de }
+\put(75,-609.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}criminalité}
+\put(75,-619.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-619.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}dans 50 états américains. Dans chaque état, sept types de crimes ou délits sont repérés par leurs }
+\put(75,-629.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}nombres}
+\put(75,-639.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-639.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}annuels de faits constatés rapportés sur 100 000 habitants : meurtres (Meurtre), enlèvements (Rapt), }
+\put(75,-649.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}vols}
+\put(75,-659.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-659.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}avec violence(Vol), agressions (Attaque), viol (Viol), vols peu importants (Larcin), vols de voitures}
+\put(75,-669.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-669.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}(Auto\_Theft). Interpréter et comparer les résultats obtenus pour ce Jeu de données. Avec les éléments }
+\put(75,-679.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}que}
+\put(75,-689.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-689.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}vous avez, peut-on visuellement identifier une typologie des individus pour ce jeu de données.}
+\put(75,-699.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-699.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}4. Faire de même pour le fichier "50\_Startups.csv" qui comporte 50 startups américaines décrites par }
+\put(75,-709.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}leurs}
+\put(75,-719.93){\fontsize{10}{1}\usefont{T1}{uarial}{m}{n}\selectfont\color{color_29791}}
+\put(75,-719.84){\fontsize{10}{1}\usefont{T1}{ptm}{m}{n}\selectfont\color{color_29791}dépenses en termes de R\&D, d’administration et de Marketing ainsi que leur Bénéfice annuel.}
+\end{picture}
+\end{document}
