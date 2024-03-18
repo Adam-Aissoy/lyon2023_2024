@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.6)  17 MAR 2024 01:12
-=======
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.3.14)  17 MAR 2024 00:55
->>>>>>> acb8814362661a3d380ea4b91480f8692c398ae7
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.3.14)  18 MAR 2024 22:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -213,33 +209,21 @@ LaTeX2e <2023-06-01>
 L3 programming layer <2023-06-05>
  ***********
 Package rerunfilecheck Info: File `cm.out' has not changed.
-(rerunfilecheck)             Checksum: B0E760B2EAC088492D2D97AB84C84E4F;3455.
+(rerunfilecheck)             Checksum: 35784AB67576F0E14C018A7C4416F7B3;3634.
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 7820 strings out of 474222
- 120475 string characters out of 5750210
- 1932978 words of memory out of 5000000
- 29989 multiletter control sequences out of 15000+600000
- 566843 words of font info for 54 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 75i,6n,79p,370b,585s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on cm.pdf (6 pages, 156474 bytes).
-=======
- 7821 strings out of 477695
- 120276 string characters out of 5831648
+ 7823 strings out of 477695
+ 120296 string characters out of 5831648
  1861759 words of memory out of 5000000
- 28226 multiletter control sequences out of 15000+600000
+ 28227 multiletter control sequences out of 15000+600000
  522161 words of font info for 52 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,6n,79p,369b,576s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,6n,79p,371b,576s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/adams/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/adams/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </home/adams/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk> </home/adams/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk> </home/adams/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/adams/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/adams/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/adams/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk>
-Output written on cm.pdf (6 pages, 96938 bytes).
->>>>>>> acb8814362661a3d380ea4b91480f8692c398ae7
+Output written on cm.pdf (6 pages, 98710 bytes).
 PDF statistics:
- 470 PDF objects out of 1000 (max. 8388607)
- 170 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 193 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 478 PDF objects out of 1000 (max. 8388607)
+ 174 compressed objects within 2 object streams
+ 32 named destinations out of 1000 (max. 500000)
+ 201 words of extra memory for PDF output out of 10000 (max. 10000000)
 

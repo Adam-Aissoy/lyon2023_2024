@@ -51,9 +51,19 @@ const database = [
 // La moitié des points est attribuée pour une solution correcte mais
 // qui utilise des variables mutables ou des boucles.
 
-const totalPopulationIL = (data) => 0; /* TODO #1*/
+//const totalPopulationIL = (data) => 0; /* TODO #1*/
+
+//console.assert(totalPopulationIL(database) === 17_380);
+
+//////////////////////////////////////---------SOLUTION-----------/////////////////////////////////////// 
+
+const totalPopulationIL = (data) =>
+  data
+    .filter((entry) => entry.state === "IL")
+    .reduce((total, entry) => total + entry.pop, 0);
 
 console.assert(totalPopulationIL(database) === 17_380);
+
 
 // Exercice 2
 //
@@ -66,10 +76,33 @@ console.assert(totalPopulationIL(database) === 17_380);
 //
 // Pour éliminer les doublons, on peut utiliser un Set.
 // https://stackoverflow.com/questions/9229645/remove-duplicate-values-from-js-array
-
+/*
 function generateSelect(data) {
-  /* TODO #2 */
+  // TODO #2 
   return document.createDocumentFragment();
+}
+*/
+
+//////////////////////////////////////---------SOLUTION-----------///////////////////////////////////////
+function generateSelect(data) {
+  // Créer un Set pour stocker les états uniques
+  const statesSet = new Set(data.map(entry => entry.state));
+
+  // Trier les états par ordre alphabétique
+  const sortedStates = [...statesSet].sort();
+
+  // Créer un DocumentFragment pour stocker les options
+  const fragment = document.createDocumentFragment();
+
+  // Ajouter chaque état comme une option dans le DocumentFragment
+  sortedStates.forEach(state => {
+    const option = document.createElement("option");
+    option.value = state;
+    option.textContent = state;
+    fragment.appendChild(option);
+  });
+
+  return fragment;
 }
 
 // pour tester
@@ -78,6 +111,7 @@ testDiv.append(generateSelect(database));
 console.log(testDiv.innerHTML);
 // doit afficher quelque chose comme
 // <option value="IL">IL</option><option value="MA">MA</option><option value="TX">TX</option>
+
 
 // Exercice 3
 //
