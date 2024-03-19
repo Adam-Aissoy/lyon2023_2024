@@ -124,7 +124,23 @@ const uri =
 
 
 // Adam Aysoy 3 
-
+async function fetchCats() {
+  const response = await fetch(uri);
+  const data = await response.json();
+  const ul = document.getElementById("cats");
+  data.forEach((x) => {
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.href = x.url;
+    a.textContent = x.url;
+    a.addEventListener("click", (e) => {
+      e.preventDefault();
+      document.getElementById("selected-cat").src = x.url;
+    });
+    li.append(a);
+    ul.append(li);
+  });
+}
 // Exercice 4
 // Adam Aysoy 4
 
@@ -133,6 +149,18 @@ const uri =
 // - Expliquer le code en commentaires (idéalement, JSDoc)
 // - Donner un exemple d'utilisation de la fonction
 // - Donner de quoi vérifier le nombre d'appels au paramètre f avec un exemple
-
+// solution 
+/**
+ * 
+ * @param {Function} f 
+ * @returns {Function}
+ */
+const ex4a = (f) => {
+  let count = 0;
+  return (x) => {
+    count++;
+    return f(x, count);
+  };
+};
 
 const ex4a = (y) => (x) => (z) => x <= 0 ? z : y(ex4a(y)(x - 1)(z));
