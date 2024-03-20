@@ -1,20 +1,12 @@
-/*r ← fork()
-si r > 0 alors // bloc exécuté par le processus père
-  pour i de 1 à 26 faire
-    sleep(1)
-    print(i)
-    kill(r, SIGCONT)
-    pause()
-    // le père attend que son fils se termine
-    return 0
-
-sinon // bloc exécuté par le processus fils
-  pour c de ’a’ à ’z’ faire
-  pause()
-  print(c)
-  kill(getppid(), SIGCONT)
-  
-return 0*/
+/*
+1) Le processus principal (c’est-à-dire la fonction d’entête int main(void)) doit exécuter la boucle infinie suivante :
+while ( true ) {
+cout << " mise en sommeil " << endl << flush ;
+sleep (60);
+}
+À l’exécution, votre programme ne doit a priori jamais se terminer, et ainsi rester bloqué dans la boucle infine. Tout ce
+qu’il va faire, c’est afficher « mise en sommeil » une première fois, puis toutes les 60 secondes.
+*/
 #include <iostream>
 #include <unistd.h>
 #include <signal.h>
