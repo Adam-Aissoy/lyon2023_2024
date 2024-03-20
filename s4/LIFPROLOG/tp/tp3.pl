@@ -57,33 +57,6 @@ trente([V,I,N,G,T,C,Q,R,E]) :-
     Q \== R, Q \== E,
     R \== E.
 
-/* 
-autre test 
-*/
-
-
-trente1([V, I, N, G, T, C, Q, R, E]) :-
-    /* attribution des valeurs */
-    valeur(V, 1, 9, []),
-    valeur(I, 0, 9, [V]),
-    valeur(N, 0, 9, [V, I]),
-    valeur(G, 0, 9, [V, I, N]),
-    valeur(T, 1, 9, [V, I, N, G]),
-    valeur(C, 1, 9, [V, I, N, G, T]),
-    valeur(Q, 0, 9, [V, I, N, G, T, C]),
-    valeur(R, 0, 9, [V, I, N, G, T, C, Q]),
-    valeur(E, 0, 9, [V, I, N, G, T, C, Q, R]),
-    /* calculs */
-    E is (T + Q + Q) mod 10.
-    
-
-
-/* Exécution */
-/*   trente([V, I, N, G, T, C, Q, R, E]).  */ 
-
-
-
-
 /*
 Le zèbre
 On considère cinq maisons, toutes de couleur différente (rouge, bleu, jaune, blanc, vert), dans
@@ -91,5 +64,34 @@ lesquelles logent cinq professionnels (peintre, sculpteur, diplomate, docteur et
 nationalité différente (anglaise, espagnole, japonaise, norvégienne et italienne) ayant chacun une
 boisson favorite (thé, jus de fruits, café, lait et vin) et un animal favori (chien, escargot, renard,
 cheval et zèbre).
+On dispose des faits suivants :
+1. l’Anglais habite la maison rouge
+2. l’Espagnol possède un chien
+3. le Japonais est peintre
+4. l’Italien boit du thé
+5. le Norvégien habite la première maison à gauche
+6. le propriétaire de la maison verte boit du café
+7. la maison verte est juste à droite de la blanche
+8. le sculpteur élève un escargot
+9. le diplomate habite la maison jaune
+10. on boit du lait dans la maison du milieu
+11. le Norvégien habite à coté de la maison bleue
+12. le violoniste boit du jus de fruit
+13. le renard est dans une maison voisine du médecin
+14. le cheval est à coté de la maison du diplomate
+Il s’agit de trouver le possesseur du zèbre et le buveur de vin.
+On suppose que les maisons sont numérotées de 1 à 5 de gauche à droite. On gère une liste C de 5
+couleurs, une liste N de 5 nationalités, une liste B de 5 boissons, une liste A de 5 animaux et une
+liste P de 5 professions (il ne faut pas les définir, c’est Prolog qui les construira pour trouver la
+solution).
+Par exemple si les listes sont :
+N = [anglais, italien, norvegien, . . .]
+C = [rouge, vert, bleu, . . .]
+A = [zebre, cheval, renard, . . .]
+cela signifie que l’Italien vit dans la maison verte, qu’il a un cheval, etc., car italien, vert et cheval
+occupent la même position dans les listes.
+• Définir le prédicat meme_maison(X,L1,Y,L2) vrai si X et Y sont dans la même position dans les
+listes L1 et L2. Par exemple pour le fait 1, on pourra dire que ‘anglais’ est à la même place dans la
+liste N (liste des nationalités) que ‘rouge’ dans la liste C (liste des couleurs).
 */
-
+meme_maison(X,L1,Y,L2
