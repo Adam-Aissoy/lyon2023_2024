@@ -1,0 +1,13 @@
+// Class Adam Aysoy 
+* Cm 1 : Processus légers (threads)
+    -- muti-processeur / multi-coeur :
+        -> Multi-processeur :
+            * plusieurs puces <<processeur >> dans un ordinateur
+            * chaque processeur a son propre jeu de registres et de mémoire cache
+    Parallelisme :
+
+  // Cours  : Ordonnancement 
+    -- Ordonnancement :
+        * Ordonnancement des processus
+        * Ordonnancement des threads
+        * Ordonnancement des tâches

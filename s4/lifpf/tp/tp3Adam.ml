@@ -161,3 +161,4 @@ in match e with
   let chaineTranslate = 
     string_of_expr ( Binop (Plus , Cst 45, Cst 12));;
   let chaineTranslate2 = string_of_expr (Cst 3);;
+(*la je suis bien en forme pour faire tout mes tps *)

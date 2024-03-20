@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TP3 - Galerie</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    <link rel="stylesheet" href="https://unpkg.com/simpledotcss/simple.min.css" />
+    <link rel="stylesheet" href="galerie.css" />
+    <script src="galerie.js" defer></script>
+  </head>
+  <body>
+    <h1>TP3 - Galerie</h1>
+    <p>
+      Voir <a href="http://unc.epizy.com/js/cc.html#Devoir%20final">le sujet original</a>. Quelques
+      images pour tester (cliquer pour remplir le champ de saisie) :
+    </p>
+    <ul id="examples" class="no-bullets">
+      <li>
+        <pre>
+https://upload.wikimedia.org/wikipedia/commons/f/fd/Almost_fledged_mallards_%2848685754882%29.jpg</pre
+        >
+      </li>
+      <li>
+        <pre>https://upload.wikimedia.org/wikipedia/commons/b/bf/Bucephala-albeola-010.jpg</pre>
+      </li>
+      <li>
+        <pre>https://upload.wikimedia.org/wikipedia/commons/5/51/Mandarin.duck.arp.jpg</pre>
+      </li>
+    </ul>
+    <label for="image-href">URL de l'image</label>
+    <input id="image-href" type="url" size="64" placeholder="https://example.com/image.png" />
+    <button id="add-button" disabled>Ajouter une image</button>
+    <div id="image-container"></div>
+
+    <!-- Ajout d'un template HTML pour éviter la création manuelle du DOM -->
+    <!-- On utilise des classes CSS pour identifier les éléments à l'intérieur -->
+    <template id="image-template">
+      <div class="image-block">
+        <img />
+        <button class="up-button">▲</button>
+        <button class="down-button">▼</button>
+        <button class="delete-button">✖</button>
+      </div>
+    </template>
+  </body>
+</html>

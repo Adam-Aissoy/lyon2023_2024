@@ -9,11 +9,13 @@ int go = false;
 mutex m;
 condition_variable cond_var;
 
+
 void attendre() {
 	cout << "Je vais attendre" << endl;
 	unique_lock<mutex> l(m);
 	while (go == false) {
-		;
+		cond_var.wait(l) ;
+
 	}
 	cout << "Je suis réveillé" << endl;
 }

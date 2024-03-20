@@ -1,0 +1,117 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+
+
+\begin{document}
+
+\section*{LIFO65 - Analyse de données}
+\subsection*{TD1}
+\subsubsection*{Exercise 1 :}
+Soit un ensemble $E$ de 8 clients définis dans $\mathbb{R}^2$ (2 produits). Les clients possèdent tous la même importance égale à 1. Ils sont séparés en 2 profils A1 et A2.
+
+\begin{center}
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    Client & Produit 1 & Produit 2 & Groupe \\
+    \hline
+    C1 & 3 & 0 & 1 \\
+    C2 & 0 & 1 & 1 \\
+    C3 & 1 & 1 & 1 \\
+    C4 & 0 & 2 & 1 \\
+    C5 & 4 & 2 & 2 \\
+    C6 & 2 & 3 & 2 \\
+    C7 & 4 & 3 & 2 \\
+    C8 & 2 & 4 & 2 \\
+    \hline
+    \end{tabular}
+\end{center}
+
+\begin{enumerate}
+    \item Calculer le centre de gravité de $E$ et la matrice $G$ des centres de gravité de $A1$ et $A2$.
+    \item Calculer la matrice centrée $\hat{X}$ et les matrices centrées ($\hat{Y}$ et $\hat{Z}$) des groupes $A1$ et $A2$.
+    \item Calculer la matrice d’inertie totale $T$.
+    \item Calculer la matrice d’inertie intra-groupes $W$ et la matrice inter-groupe $B$.
+    \item Calculer l’inertie totale supportée par la direction de coordonnées $(1, 1)$.
+    \item Calculer le pouvoir discriminant de cette direction.
+    \item Calculer l’inertie de $E$ par rapport au client $c$ de coordonnées $(1, -1)$.
+\end{enumerate}
+
+\subsubsection*{Exercise 2 :}
+Soient les 6 vecteurs lignes représentant 6 clients $\{x_i\}_{i=1}^6$ dans $\mathbb{R}^3$ (3 produits) muni de la métrique euclidienne usuelle et $m_i = 1$, $i = 1, \ldots, 6$. Dans la matrice des données : 1 : positif ; 0 : Indifférent et -1 : négatif
+
+$$
+X = 
+\begin{pmatrix}
+1 & 0 & -1 \\
+0 & 1 & -1 \\
+-1 & 1 & 0 \\
+0 & -1 & 1 \\
+-1 & 0 & 1 \\
+1 & -1 & 0 \\
+\end{pmatrix}
+$$
+
+\begin{enumerate}
+    \item Calculer la matrice $V = \sum_{i=1}^{6} m_i x_i^T x_i$
+    \item Calculer l’inertie $I_0$ du nuage des points par rapport à l’origine.
+    \item Calculer les valeurs propres de $V$.
+    \item Trouver le vecteur propre associé à la valeur propre $\lambda = 0$.
+    \item Trouver les vecteurs propres orthonormés de $V$ associés aux valeurs propres non nulles de $V$.
+    \item Représenter graphiquement le nuage des points dans le sous-espace engendré par ces 2 vecteurs.
+\end{enumerate}
+
+
+
+
+
+\subsection*{Solution}
+\subsubsection*{Exercise 1 :}
+
+\begin{enumerate}
+    \item Le centre de gravité de \( E \) se calcule en faisant la moyenne des coordonnées de tous les clients :
+    \[ \text{Centre de gravité de } E = \left( \frac{1}{8} \sum_{i=1}^{8} x_i, \frac{1}{8} \sum_{i=1}^{8} y_i \right) \]
+    où \( (x_i, y_i) \) sont les coordonnées du client \( C_i \).
+    
+    La matrice \( G \) des centres de gravité de \( A1 \) et \( A2 \) se calcule de la manière suivante :
+    \[
+    G = \begin{pmatrix}
+    \bar{x}_{A1} & \bar{y}_{A1} \\
+    \bar{x}_{A2} & \bar{y}_{A2}
+    \end{pmatrix}
+    \]
+    où \( \bar{x}_{A1} \) et \( \bar{y}_{A1} \) sont les coordonnées du centre de gravité de \( A1 \), et \( \bar{x}_{A2} \) et \( \bar{y}_{A2} \) sont les coordonnées du centre de gravité de \( A2 \).
+    
+    \item La matrice centrée \( \hat{X} \) se calcule en soustrayant le centre de gravité de \( E \) à chaque client. Les matrices centrées \( \hat{Y} \) et \( \hat{Z} \) se calculent de la même manière pour les groupes \( A1 \) et \( A2 \).
+    
+    \item La matrice d’inertie totale \( T \) se calcule en faisant la somme des produits externes des vecteurs centrés.
+    
+    \item La matrice d’inertie intra-groupes \( W \) se calcule en faisant la somme des matrices d’inertie pour chaque groupe \( A1 \) et \( A2 \). La matrice inter-groupe \( B \) se calcule en soustrayant la matrice \( W \) de la matrice \( T \).
+    
+    \item L'inertie totale supportée par la direction de coordonnées \( (1, 1) \) se calcule en projetant chaque client sur cette direction et en faisant la somme des carrés des distances.
+    
+    \item Le pouvoir discriminant de cette direction se calcule en prenant le rapport de l'inertie inter-groupes sur l'inertie totale.
+    
+    \item L'inertie de \( E \) par rapport au client \( c \) de coordonnées \( (1, -1) \) se calcule en projetant \( c \) sur la droite passant par l'origine et \( (1, -1) \) et en faisant la somme des carrés des distances.
+\end{enumerate}
+
+\subsubsection*{Exercice 2 :}
+
+\begin{enumerate}
+    \item La matrice \( V \) se calcule en faisant la somme des produits externes des vecteurs \( x_i \).
+    
+    \item L'inertie \( I_0 \) du nuage des points par rapport à l’origine se calcule en faisant la somme des carrés des distances de chaque point à l'origine.
+    
+    \item Les valeurs propres de \( V \) se calculent en résolvant le problème aux valeurs propres \( Vv = \lambda v \), où \( v \) est le vecteur propre et \( \lambda \) est la valeur propre.
+    
+    \item Le vecteur propre associé à la valeur propre \( \lambda = 0 \) se trouve en résolvant le système d'équations \( Vv = 0 \).
+    
+    \item Les vecteurs propres orthonormés de \( V \) associés aux valeurs propres non nulles se trouvent en normalisant les vecteurs propres correspondants.
+    
+    \item La représentation graphique du nuage des points dans le sous-espace engendré par les 2 vecteurs propres orthonormés se fait en projetant chaque point sur ces vecteurs et en représentant les coordonnées projetées.
+\end{enumerate}
+
+
+
+\end{document}

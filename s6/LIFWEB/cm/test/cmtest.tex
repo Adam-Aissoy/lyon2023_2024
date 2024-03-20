@@ -1,0 +1,156 @@
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor} % Pour utiliser \textcolor{}
+
+\title{LIFWEB - CM3 \\ Programmation Fonctionnelle et Asynchrone}
+\author{Romuald THION}
+\date{Semestre printemps 2023-2024 UCBL}
+
+\begin{document}
+
+\maketitle
+
+\section{PROGRAMMATION FONCTIONNELLE EN JS}
+\section{CONCEPTS DE LA PROGRAMMATION FONCTIONNELLE}
+Glossary of Modern JavaScript Concepts (2017)
+\begin{itemize}
+    \item Purity: pure functions, side effects,
+    \item State: stateful and stateless,
+    \item Immutability and mutability,
+    \item Imperative and declarative programming,
+    \item Higher-order functions, …
+\end{itemize}
+Voir LIFPF - Programmation Fonctionnelle.
+
+\section{PROGRAMMATION FONCTIONNELLE AUJOURD’HUI}
+2023 Developer Survey Stack Overflow
+six langages fonctionnels dans Top paying technologies.
+Functional programming is finally going mainstream
+\begin{itemize}
+    \item “Once functional programming really clicked in my brain, I was like ‘why do it any other way?’”
+    \item “React encourages people to think in a more functional way, even if it isn’t purely functional.”
+\end{itemize}
+
+\section{FONCTIONS EN JS}
+\section{PORTÉE DES VARIABLES}
+\textcolor{red}{☠️} var : portée fonction \textcolor{red}{☠️}
+\newline
+\textcolor{blue}{⚠️} let/const : portée lexicale (bloc) \textcolor{blue}{⚠️}
+\newline
+
+\textcolor{green}{👍} let/const, la portée de i est la boucle for.
+
+\begin{verbatim}
+for (let i = 0; i < 3; i++) {
+  console.log(i); // 0, then 1, then 2
+}
+%Error: Unmatched {.
+\end{verbatim}
+
+\textcolor{orange}{👎} var, la portée de i est la fonction englobante.
+
+\begin{verbatim}
+for (var i = 0; i < 3; i++) {
+  console.log(i); // 0, then 1, then 2
+}
+console.log(i); // affiche 3 😱
+\end{verbatim}
+
+\section{DÉCLARATION DE FONCTION}
+\begin{verbatim}
+%Error: Missing \begin{document}.
+%Error: Missing \end{document}.
+\end{verbatim}
+
+Ici, on crée une fonction avec une instruction (statement) function qui ne produit pas de valeur de retour (MDN).
+
+\section{EXPRESSION FONCTIONNELLE}
+\begin{verbatim}
+%Error: Missing \begin{document}.
+%Error: Missing \end{document}.
+\end{verbatim}
+
+👉 Ici, on crée une fonction comme une expression avec laquelle on initialise une variable funct, c’est une Named Function Expression - (NFE) (javascript.info, MDN).
+
+\section{EXPRESSION FLÉCHÉE (1/3)}
+A.k.a., arrow functions, fat arrows ou lambdas (MDN).
+
+\begin{verbatim}
+%Error: Missing \begin{document}.
+%Error: Missing \end{document}.
+\end{verbatim}
+
+\textcolor{blue}{⚠️} Sans return, funct renvoie undefined. \textcolor{blue}{⚠️}
+
+\section{EXPRESSION FLÉCHÉE (2/3)}
+\begin{verbatim}
+%Error: Missing \begin{document}.
+%Error: Missing \end{document}.
+\end{verbatim}
+
+Quasi-équivalente à la NFE suivante :
+\begin{verbatim}
+%Error: Missing \begin{document}.
+%Error: Missing \end{document}.
+\end{verbatim}
+Et à l’expression du λ-calcul :
+
+\[λa_1...λa_n.e\]
+
+\section{EXPRESSION FLÉCHÉE (3/3)}
+\textcolor{blue}{⚠️} NFE et arrows ne sont pas équivalentes, car une arrow a this dans sa fermeture statique, mais pas la NFE qui l’obtient dynamiquement. \textcolor{blue}{⚠️}
+
+\section{LES FERMETURES (CLOSURES)}
+Terme utilisé en JS pour \((λx.e)v\) : l’expression \(e\) dans laquelle \(x\) prend la valeur à \(v\).
+
+\begin{verbatim}
+%Error: Missing \begin{document}.
+%Error: Missing \end{document}.
+\end{verbatim}
+
+💡 helloBuddy() et helloGuys() sont des fermetures (closures) où person est liée.
+
+\section{LES FERMETURES (CLOSURES)}
+En λ-calcul (avec \(++\) la concaténation) :
+
+\[helloBuddy ≡ λp.λc.p++c ≡ (helloBuddy) ≡ (λp.λc.p++c)Buddy ≡ (λc.p++c)[p:=Buddy]\]
+
+\section{LA SÉMANTIQUE DE JS}
+La sémantique de JS est informelle ECMA-262, sa formalisation se construit a posteriori, e.g. KJS: A Complete Formal Semantics of JavaScript - PLDI’15, voir aussi TypeScript.
+
+\section{EXEMPLE : FERMETURE AVEC LE DOM (1/2)}
+\begin{verbatim}
+%Error: Missing \begin{document}.
+%Error: Missing \end{document}.
+\end{verbatim}
+
+💡 La variable taille est liée.
+
+\section{EXEMPLE : FERMETURE AVEC LE DOM (2/2)}
+La fermeture de M. Jourdain (TP2) :
+\begin{verbatim}
+%Error: Missing \begin{document}.
+%Error: Missing \end{document}.
+\end{verbatim}
+
+\section{EXEMPLE : TABLEAU DE FONCTIONS}
+\begin{verbatim}
+%Error: Missing \begin{document}.
+%Error: Missing \end{document}.
+\end{verbatim}
+
+Voir l’exemple.
+
+🤔 let/const n’ont été introduits qu’avec ES6 / ECMAScript 2015, comment faisait-on depuis 1995 ?
+
+\section{IIFE}
+An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined MDN.
+\begin{verbatim}
+%Error: Missing \begin{document}.
+%Error: Missing \end{document}.
+\end{verbatim}
+
+📜 Permet de limiter la portée des variables avec une closure : méthode avant la standardisation des modules ESM (ES6) pour encapsuler.
+
+💡 Les IIFEs permettent de

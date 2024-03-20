@@ -16,7 +16,7 @@ int main(int argc, char *argv[]) {
   // }
   //cout << endl;
   // TODO 
-
+  
   if (argc != 2){
     cerr << " Il faut exactement un argument après la commande."<<endl;
     return -1;

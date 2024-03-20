@@ -1,0 +1,649 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.6)  18 MAR 2024 16:27
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex
+(c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(c:/texlive/2023/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(c:/texlive/2023/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count187
+\c@section=\count188
+\c@subsection=\count189
+\c@subsubsection=\count190
+\c@paragraph=\count191
+\c@subparagraph=\count192
+\c@figure=\count193
+\c@table=\count194
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+) (c:/texlive/2023/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+) (c:/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+ (c:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+ (c:/texlive/2023/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+) (c:/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+) (c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count195
+\l__pdf_internal_box=\box51
+) (./cmtest.aux)
+\openout1 = `cmtest.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+ (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count196
+\scratchdimen=\dimen141
+\scratchbox=\box52
+\nofMPsegments=\count197
+\nofMParguments=\count198
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count199
+\MPscratchDim=\dimen142
+\MPnumerator=\count266
+\makeMPintoPDFobject=\count267
+\everyMPtoPDFconversion=\toks20
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 12.
+
+Overfull \hbox (7.26288pt too wide) in paragraph at lines 14--14
+[]\OT1/cmr/bx/n/14.4 PROGRAMMATION FONC-TION-NELLE EN
+ []
+
+
+Overfull \hbox (36.24257pt too wide) in paragraph at lines 15--15
+[]\OT1/cmr/bx/n/14.4 CONCEPTS DE LA PRO-GRAM-MA-TION FONC-
+ []
+
+
+Overfull \hbox (13.5962pt too wide) in paragraph at lines 26--26
+[]\OT1/cmr/bx/n/14.4 PROGRAMMATION FONC-TION-NELLE AU-
+ []
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:37: LaTeX Error: Unicode character ☠ (U+2620)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 \textcolor{red}{☠️}
+                             var : portée fonction \textcolor{red}{☠️}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:37: LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 \textcolor{red}{☠️}
+                             var : portée fonction \textcolor{red}{☠️}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:37: LaTeX Error: Unicode character ☠ (U+2620)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ...: portée fonction \textcolor{red}{☠️}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:37: LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ...: portée fonction \textcolor{red}{☠️}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:39: LaTeX Error: Unicode character ⚠ (U+26A0)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 \textcolor{blue}{⚠️}
+                              let/const : portée lexicale (bloc) \textcolor...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:39: LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 \textcolor{blue}{⚠️}
+                              let/const : portée lexicale (bloc) \textcolor...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:39: LaTeX Error: Unicode character ⚠ (U+26A0)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 ...e lexicale (bloc) \textcolor{blue}{⚠️}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:39: LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 ...e lexicale (bloc) \textcolor{blue}{⚠️}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--41
+
+ []
+
+[1
+
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:42: LaTeX Error: Unicode character 👍 (U+1F44D)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.42 \textcolor{green}{👍}
+                             let/const, la portée de i est la boucle for.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:51: LaTeX Error: Unicode character 👎 (U+1F44E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 \textcolor{orange}{👎}
+                              var, la portée de i est la fonction englobante.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:58: LaTeX Error: Unicode character 😱 (U+1F631)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 \end{verbatim}
+                   
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:74: LaTeX Error: Unicode character 👉 (U+1F449)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.74 👉
+          Ici, on crée une fonction comme une expression avec laquelle on i...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:84: LaTeX Error: Unicode character ⚠ (U+26A0)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.84 \textcolor{blue}{⚠️}
+                              Sans return, funct renvoie undefined. \textcol...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:84: LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.84 \textcolor{blue}{⚠️}
+                              Sans return, funct renvoie undefined. \textcol...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:84: LaTeX Error: Unicode character ⚠ (U+26A0)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.84 ...envoie undefined. \textcolor{blue}{⚠️}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:84: LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.84 ...envoie undefined. \textcolor{blue}{⚠️}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[2]
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:97: LaTeX Error: Unicode character λ (U+03BB)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97 Et à l’expression du λ
+                               -calcul :
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 99.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 99.
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:99: LaTeX Error: Unicode character λ (U+03BB)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.99 \[λ
+         a_1...λa_n.e\]
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:99: LaTeX Error: Unicode character λ (U+03BB)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.99 \[λa_1...λ
+                 a_n.e\]
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:102: LaTeX Error: Unicode character ⚠ (U+26A0)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.102 \textcolor{blue}{⚠️}
+                               NFE et arrows ne sont pas équivalentes, car ...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:102: LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.102 \textcolor{blue}{⚠️}
+                               NFE et arrows ne sont pas équivalentes, car ...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:102: LaTeX Error: Unicode character ⚠ (U+26A0)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.102 ...t dynamiquement. \textcolor{blue}{⚠️}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:102: LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.102 ...t dynamiquement. \textcolor{blue}{⚠️}
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:105: LaTeX Error: Unicode character λ (U+03BB)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.105 Terme utilisé en JS pour \((λ
+                                     x.e)v\) : l’expression \(e\) dans laq...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:112: LaTeX Error: Unicode character 💡 (U+1F4A1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.112 💡
+           helloBuddy() et helloGuys() sont des fermetures (closures) où pe...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:115: LaTeX Error: Unicode character λ (U+03BB)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.115 En λ
+           -calcul (avec \(++\) la concaténation) :
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:117: LaTeX Error: Unicode character ≡ (U+2261)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 \[helloBuddy ≡
+                       λp.λc.p++c ≡ (helloBuddy) ≡ (λp.λc.p++c)Buddy...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:117: LaTeX Error: Unicode character λ (U+03BB)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 \[helloBuddy ≡ λ
+                         p.λc.p++c ≡ (helloBuddy) ≡ (λp.λc.p++c)Buddy...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:117: LaTeX Error: Unicode character λ (U+03BB)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 \[helloBuddy ≡ λp.λ
+                             c.p++c ≡ (helloBuddy) ≡ (λp.λc.p++c)Buddy...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:117: LaTeX Error: Unicode character ≡ (U+2261)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 \[helloBuddy ≡ λp.λc.p++c ≡
+                                        (helloBuddy) ≡ (λp.λc.p++c)Buddy...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:117: LaTeX Error: Unicode character ≡ (U+2261)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 ...ddy ≡ λp.λc.p++c ≡ (helloBuddy) ≡
+                                                   (λp.λc.p++c)Buddy ≡ (...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:117: LaTeX Error: Unicode character λ (U+03BB)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 ...≡ λp.λc.p++c ≡ (helloBuddy) ≡ (λ
+                                                  p.λc.p++c)Buddy ≡ (λc....
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:117: LaTeX Error: Unicode character λ (U+03BB)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 ...λp.λc.p++c ≡ (helloBuddy) ≡ (λp.λ
+                                                  c.p++c)Buddy ≡ (λc.p++c...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:117: LaTeX Error: Unicode character ≡ (U+2261)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 ... (helloBuddy) ≡ (λp.λc.p++c)Buddy ≡
+                                                   (λc.p++c)[p:=Buddy]\]
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:117: LaTeX Error: Unicode character λ (U+03BB)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 ...lloBuddy) ≡ (λp.λc.p++c)Buddy ≡ (λ
+                                                  c.p++c)[p:=Buddy]\]
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+Overfull \hbox (0.84271pt too wide) in paragraph at lines 122--122
+[]\OT1/cmr/bx/n/14.4 EXEMPLE : FER-ME-TURE AVEC LE DOM
+ []
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:128: LaTeX Error: Unicode character 💡 (U+1F4A1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.128 💡
+           La variable taille est liée.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[3]
+Overfull \hbox (0.84271pt too wide) in paragraph at lines 130--130
+[]\OT1/cmr/bx/n/14.4 EXEMPLE : FER-ME-TURE AVEC LE DOM
+ []
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:145: LaTeX Error: Unicode character 🤔 (U+1F914)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.145 🤔
+           let/const n’ont été introduits qu’avec ES6 / ECMAScript 201...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:154: LaTeX Error: Unicode character 📜 (U+1F4DC)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.154 📜
+           Permet de limiter la portée des variables avec une closure : mé...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/etulyon1/Documents/lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex:156: LaTeX Error: Unicode character 💡 (U+1F4A1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156 💡
+           Les IIFEs permettent de
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+)
+! Emergency stop.
+<*> .../lyon2023_2024/s6/LIFWEB/cm/test/cmtest.tex
+                                                  
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 1462 strings out of 474222
+ 22603 string characters out of 5750210
+ 1929978 words of memory out of 5000000
+ 23761 multiletter control sequences out of 15000+600000
+ 562212 words of font info for 50 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 42i,6n,51p,278b,277s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!
