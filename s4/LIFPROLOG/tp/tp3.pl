@@ -74,7 +74,7 @@ trente1([V, I, N, G, T, C, Q, R, E]) :-
     valeur(R, 0, 9, [V, I, N, G, T, C, Q]),
     valeur(E, 0, 9, [V, I, N, G, T, C, Q, R]),
     /* calculs */
-    E is (T + Q + Q) mod 10,
+    E is (T + Q + Q) mod 10.
     
 
 
@@ -92,5 +92,4 @@ nationalité différente (anglaise, espagnole, japonaise, norvégienne et italie
 boisson favorite (thé, jus de fruits, café, lait et vin) et un animal favori (chien, escargot, renard,
 cheval et zèbre).
 */
-
 
