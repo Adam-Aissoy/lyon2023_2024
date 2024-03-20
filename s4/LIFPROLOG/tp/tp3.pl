@@ -94,4 +94,10 @@ occupent la même position dans les listes.
 listes L1 et L2. Par exemple pour le fait 1, on pourra dire que ‘anglais’ est à la même place dans la
 liste N (liste des nationalités) que ‘rouge’ dans la liste C (liste des couleurs).
 */
-meme_maison(X,L1,Y,L2
+meme_maison(X, [X|_], Y, [Y|_]).
+meme_maison(X, [_|L1], Y, [_|L2]) :- meme_maison(X, L1, Y, L2).
+/*
+• Définir le prédicat maison_a_cote(X,L1,Y,L2) vrai si X et Y sont dans des positions voisines dans
+les listes L1 et L2.
+*/
+maison_a_cote(X, L1, Y, L2) :- meme_maison(X, L1, Y, L2).
