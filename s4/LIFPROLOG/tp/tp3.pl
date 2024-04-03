@@ -100,4 +100,3 @@ meme_maison(X, [_|L1], Y, [_|L2]) :- meme_maison(X, L1, Y, L2).
 • Définir le prédicat maison_a_cote(X,L1,Y,L2) vrai si X et Y sont dans des positions voisines dans
 les listes L1 et L2.
 */
-maison_a_cote(X, L1, Y, L2) :- meme_maison(X, L1, Y, L2).
