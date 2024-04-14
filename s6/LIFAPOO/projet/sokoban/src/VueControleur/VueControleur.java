@@ -14,6 +14,10 @@ import javax.imageio.ImageIO;
 import javax.swing.*;
 
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+
 import modele.*;
 
 
@@ -37,7 +41,41 @@ public class VueControleur extends JFrame implements Observer {
 
     private JLabel[][] tabJLabel; // cases graphique (au moment du rafraichissement, chaque case va être associée à une icône, suivant ce qui est présent dans le modèle)
 
+    /*Begin Adam Aysoy */
 
+
+
+
+    private JButton btnDemarrer;
+    private JButton btnPause;
+    private JButton btnQuitter;
+
+
+
+    private void ajouterEcouteurBoutons() {
+        btnDemarrer.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // Logique pour démarrer la partie
+            }
+        });
+
+        btnPause.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // Logique pour mettre en pause la partie
+            }
+        });
+
+        btnQuitter.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // Logique pour quitter la partie
+            }
+        });
+    }
+
+    /*End Adam Aysoy */
     public VueControleur(Jeu _jeu) {
         sizeX = jeu.SIZE_X;
         sizeY = _jeu.SIZE_Y;

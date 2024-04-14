@@ -17,6 +17,7 @@ public class Jeu extends Observable {
     public static final int SIZE_Y = 10;
 
 
+    private HistoriqueMouvements historique;
 
     private Heros heros;
 
@@ -26,7 +27,9 @@ public class Jeu extends Observable {
 
 
     public Jeu() {
-        initialisationNiveau();
+
+        /*initialisationNiveau();*/
+        historique = new HistoriqueMouvements();
     }
 
 
@@ -127,9 +130,32 @@ public class Jeu extends Observable {
         
         return pCible;
     }
-    
+    /*Begin Adam Aysoy*/
 
-    
+
+
+
+
+
+
+    public void annuler() {
+        if (historique.peutAnnuler()) {
+            historique.annuler();
+            // Annuler le mouvement dans le modèle
+        }
+    }
+
+    public void retablir() {
+        if (historique.peutRetablir()) {
+            historique.retablir();
+            // Rétablir le mouvement dans le modèle
+        }
+    }
+
+
+    /*End Adam Aysoy*/
+
+
     /** Indique si p est contenu dans la grille
      */
     private boolean contenuDansGrille(Point p) {
