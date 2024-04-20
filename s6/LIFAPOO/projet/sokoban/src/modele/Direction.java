@@ -9,6 +9,22 @@ package modele;
  *
  *
  */
+
 public enum Direction {
-    haut, bas, gauche, droite
+    haut, bas, gauche, droite;
+
+    public Direction opposee() {
+        switch (this) {
+            case haut:
+                return bas;
+            case bas:
+                return haut;
+            case gauche:
+                return droite;
+            case droite:
+                return gauche;
+            default:
+                return null;
+        }
+    }
 }

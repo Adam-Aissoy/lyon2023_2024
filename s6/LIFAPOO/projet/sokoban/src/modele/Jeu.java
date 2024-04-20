@@ -9,7 +9,7 @@ package modele;
 import java.awt.Point;
 import java.util.HashMap;
 import java.util.Observable;
-
+import VueControleur.HistoriqueMouvements;
 
 public class Jeu extends Observable {
 
@@ -49,33 +49,6 @@ public class Jeu extends Observable {
     }
 
     
-    private void initialisationNiveau() {
-
-
-
-
-        // murs extérieurs horizontaux
-        for (int x = 0; x < 20; x++) {
-            addCase(new Mur(this), x, 0);
-            addCase(new Mur(this), x, 9);
-        }
-
-        // murs extérieurs verticaux
-        for (int y = 1; y < 9; y++) {
-            addCase(new Mur(this), 0, y);
-            addCase(new Mur(this), 19, y);
-        }
-
-        for (int x = 1; x < 19; x++) {
-            for (int y = 1; y < 9; y++) {
-                addCase(new Vide(this), x, y);
-            }
-
-        }
-
-        heros = new Heros(this, grilleEntites[4][4]);
-        Bloc b = new Bloc(this, grilleEntites[6][6]);
-    }
 
     private void addCase(Case e, int x, int y) {
         grilleEntites[x][y] = e;
@@ -137,6 +110,30 @@ public class Jeu extends Observable {
 
 
 
+    private void initialisationNiveau() {
+        // Murs extérieurs horizontaux
+        for (int x = 0; x < SIZE_X; x++) {
+            addCase(new Mur(this), x, 0);
+            addCase(new Mur(this), x, SIZE_Y - 1);
+        }
+
+        // Murs extérieurs verticaux
+        for (int y = 1; y < SIZE_Y - 1; y++) {
+            addCase(new Mur(this), 0, y);
+            addCase(new Mur(this), SIZE_X - 1, y);
+        }
+
+        // Autres cases vides
+        for (int x = 1; x < SIZE_X - 1; x++) {
+            for (int y = 1; y < SIZE_Y - 1; y++) {
+                addCase(new Vide(this), x, y);
+            }
+        }
+
+        // Ajout du héros et du bloc
+        heros = new Heros(this, grilleEntites[4][4]);
+        Bloc b = new Bloc(this, grilleEntites[6][6]);
+    }
 
     public void annuler() {
         if (historique.peutAnnuler()) {
@@ -171,5 +168,17 @@ public class Jeu extends Observable {
         
         return retour;
     }
+    /*this Adam*/
+
+
+    public void chargerPuzzle(String filePath) {
+        // Logique pour charger le puzzle à partir du fichier spécifié
+        // Assurez-vous de mettre à jour la grille et les entités en conséquence
+
+    }
+
+
+
+
 
 }
