@@ -156,7 +156,7 @@ int main(int argc, char **argv) {
       double temps_total4 = results[i];
       temps_total3 += temps_total4;
     }
-    cout<<temps_total3 << endl;
+    cout << temps_total3 << endl;
   */
   return 0;
 }
