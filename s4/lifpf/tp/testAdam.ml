@@ -1,6 +1,10 @@
-let renverse = 
-  let rec renverse_ajoute (lr :int list)(lc : int list ): int list =
-    match lr with
-    | [] -> lc
-    | n::lr' -> renverse_ajoute lr' (n::lc) 
-  in fun (l : int list) renverse_ajoute l []
+
+(* that's firt comment and first function *)
+(* somme of two int *)
+let somme ( a : int ) ( b : int ) : int = a + b ;; 
+
+(* somme of  int list  *)
+let rec sommeList ( l : int list   ) : int = 
+match l with 
+| [] -> 0
+| tete::queue -> tete + sommeList queue;;
