@@ -1,0 +1,12 @@
+* calcule note ihm 
+- cc1 = 10/20 : 10% de la note finale
+- cc2 = 12/20 : 10% de la note finale
+- tp1 = 05/20 : 20% de la note finale
+- tp2 = 04.5/20 : 20% de la note finale
+- examen = ? : 40% de la note finale
+- note finale = cc1 + cc2 + tp1 + tp2 + examen
+# il reste combien sur 20 en examen  pour que je peux avoir une moyen de 10 sur la note finale. 
+# donne moi la note faut il avoir pour valider la matiere 
+0.1*cc1 + 0.1*cc2 + 0.2*tp1 + 0.2*tp2 + 0.4*examen = 10
+examen = (10 - 0.1*cc1 - 0.1*cc2 - 0.2*tp1 - 0.2*tp2)/0.4
+
